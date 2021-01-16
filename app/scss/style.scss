@@ -65,8 +65,11 @@
 }
 
 .menu {
+    display: flex;
     &__list {
         display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     &__item + .menu__item {
@@ -93,34 +96,66 @@
 
 .user-nav {
     display: flex;
-    &__link + .user-nav__link {
-        padding-left: 24px;
-    }
+    justify-content: center;
+    align-items: center;
+   
     &__link {
-        position: relative;
-        padding-right: 41px;
-        &::before {
-            content: '';
-            position: absolute;
-            top: 0px;
-            left: 0;
+        // position: relative;
+
+        &:last-child {
+            margin: 0;
         }
 
-        &--search::before {
-            width: 16px;
-            height: 16px;
-            background-image: url('../images/icons/icon-search.svg');
-            background-repeat: no-repeat;
+        &--search {
             background-color: #edf1f4;
-            padding: 16px 16px;
             border-radius: 50%;
+            padding: 14px 17px 8px;
         }
 
-        &--heart::before {
-            width: 18px;
-            height: 16px;
-            background-image: url('../images/icons/heart-icon.svg');
+        &--icon {
+            background-color: #a3bbc8;
+            border-radius: 50%;
+            padding: 14px 14px 6px;
         }
+
+        &--heart,
+        &__cart {
+            padding: 11px 0 6px;
+        }
+
+        &--heart {
+            border-right: 1px solid #a3bbc8;
+            padding-right: 30px;
+        }
+
+        &--cart {
+            padding-left: 30px;
+        }
+        
+
+        // //&--search::before {
+        //     width: 16px;
+        //     height: 16px;
+        //     background-image: url('../images/icons/icon-search.svg');
+        //     background-repeat: no-repeat;
+        //     background-color: #edf1f4;
+        //     padding: 16px 16px;
+        //     border-radius: 50%;
+        // }
+
+        // //&--heart::before {
+        //     width: 18px;
+        //     height: 16px;
+        //     background-image: url('../images/icons/heart-icon.svg');
+        // }
+    }
+
+    &__box {
+        margin-right: 20px;
+        margin-left: 24px;
+        padding: 16px 40px 12px;
+        background-color: $accent-color;
+        border-radius: 30px;
     }
 }
 
@@ -159,7 +194,7 @@
         display: inline-block;
         font-size: 15px;
         color: #ffffff;
-        padding: 20px 100px 20px 27px;
+        padding: 19px 102px 19px 29px;
         background-color: #a3bbc8;
         position: relative;
         &::after {
@@ -213,7 +248,7 @@
         display: flex;
         flex-direction: column;
         position: relative;
-        
+
         &:hover .product__links {
             opacity: 1;
         }
