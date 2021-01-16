@@ -1,3 +1,12 @@
 body {
-    
+    @extend %rubik-400;
+    color: #243f4d;
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+.container {
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
