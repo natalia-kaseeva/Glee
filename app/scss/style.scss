@@ -226,8 +226,8 @@
     background-color: #d4d4d4;
 
     &__item {
-        //min-height: 822px;
-        min-height: 70vh;
+        min-height: 822px;
+        //min-height: 70vh;
         background-image: url('../images/header-bg.jpg');
         background-repeat: no-repeat;
         background-size: cover;
@@ -267,6 +267,7 @@
         background-color: $light-grey;
         position: relative;
         outline: transparent;
+        transition: all .5s;
 
         &::after {
             content: '';
@@ -332,7 +333,7 @@
         display: flex;
         flex-direction: column;
         position: relative;
-
+       
         &:hover .product__links {
             opacity: 1;
         }
@@ -396,6 +397,16 @@
     &__link:not(:last-child) {
         margin-right: 13px;
     }
+}
+
+.mixitup-control-active {
+    color: $title;
+    outline: transparent;
+}
+
+.mixitup-control-active:focus {
+    padding: 5px 5px;
+    outline: $dark-grey solid 1px;
 }
 
 .footer-logo {
