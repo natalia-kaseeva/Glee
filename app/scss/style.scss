@@ -86,7 +86,7 @@
         align-items: center;
     }
 
-    &__item +.menu__item {
+    &__item + .menu__item {
         margin-left: 35px;
     }
 
@@ -223,12 +223,13 @@
 }
 
 .slider {
-    background-color: #d4d4d4;
+    &__inner {
+        background-color: #d4d4d4;
+        height: 822px;
+    }
 
     &__item {
         min-height: 822px;
-        //min-height: 70vh;
-        background-image: url('../images/header-bg.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
@@ -267,7 +268,7 @@
         background-color: $light-grey;
         position: relative;
         outline: transparent;
-        transition: all .5s;
+        transition: background-color .5s;
 
         &::after {
             content: '';
@@ -282,13 +283,48 @@
 
         &:hover,
         &:active {
-            background-color: #314f5f;
+            background-color: $dark-blue;
         }
 
         &:focus {
-            border: 1px solid #314f5f;
+            border: 1px solid $dark-blue;
         }
     }
+}
+
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    bottom: 46px;
+    transform: translateX(-50%);
+}
+
+.slick-dots li+li {
+    margin-left: 10px;
+}
+
+.slick-dots button {
+    background-color: #fde3cc;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: 11px;
+    color: $dark-grey;
+    @extend %rubik-500;
+    padding: 0;
+    border: none;
+    outline: transparent;
+}
+
+.slick-dots button:focus {
+    border: 1px solid #d6af8d;
+   
+}
+
+.slick-dots .slick-active button  {
+    background-color: #fff;
 }
 
 .product {
@@ -333,7 +369,7 @@
         display: flex;
         flex-direction: column;
         position: relative;
-       
+
         &:hover .product__links {
             opacity: 1;
         }
@@ -402,11 +438,11 @@
 .mixitup-control-active {
     color: $title;
     outline: transparent;
-}
 
-.mixitup-control-active:focus {
-    padding: 5px 5px;
-    outline: $dark-grey solid 1px;
+    &:focus {
+        padding: 5px 5px;
+        outline: $accent-color solid 1px;
+    }
 }
 
 .footer-logo {
@@ -442,7 +478,6 @@
         max-width: 270px;
         margin-bottom: 32px;
     }
-
 }
 
 .connection {
@@ -502,10 +537,11 @@
         color: #fff;
         cursor: pointer;
         margin-left: -4px;
+        transition: background-color .5s;
 
         &:hover,
         &:active {
-            background-color: #314f5f;
+            background-color: $dark-blue;
         }
     }
 
@@ -514,7 +550,7 @@
         outline: transparent;
 
         &:focus {
-            border: 1px solid #314f5f;
+            border: 1px solid $dark-blue;
         }
     }
 }
