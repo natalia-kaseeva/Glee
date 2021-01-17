@@ -13,7 +13,7 @@
     }
 
     &__features {
-        padding: 50px 0;
+        padding: 39px 0;
         background-color: #fef7f0
     }
 
@@ -29,7 +29,7 @@
 
     &__item {
         position: relative;
-        padding-left: 75px;
+        padding-left: 82px;
         max-width: 300px;
 
         &--clock {
@@ -77,6 +77,10 @@
     }
 }
 
+.logo {
+    margin-right: 145px;
+}
+
 .menu {
     display: flex;
 
@@ -86,7 +90,7 @@
         align-items: center;
     }
 
-    &__item + .menu__item {
+    &__item+.menu__item {
         margin-left: 35px;
     }
 
@@ -240,8 +244,8 @@
         max-width: 415px;
         margin-left: 300px;
         position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
+        top: 216px;
+        //transform: translateY(-50%);
     }
 
     &__title {
@@ -249,7 +253,7 @@
         font-size: 70px;
         line-height: 0.97;
         text-transform: uppercase;
-        margin-bottom: 45px;
+        margin-bottom: 35px;
     }
 
     &__text {
@@ -257,14 +261,14 @@
         font-size: 18px;
         line-height: 1.7;
         color: #436372;
-        margin-bottom: 45px;
+        margin-bottom: 35px;
     }
 
     &__link {
         display: inline-block;
         font-size: 15px;
         color: #ffffff;
-        padding: 19px 102px 19px 29px;
+        padding: 17px 102px 17px 32px;
         background-color: $light-grey;
         position: relative;
         outline: transparent;
@@ -320,23 +324,23 @@
 
 .slick-dots button:focus {
     border: 1px solid #d6af8d;
-   
+
 }
 
-.slick-dots .slick-active button  {
+.slick-dots .slick-active button {
     background-color: #fff;
 }
 
 .product {
-    padding: 70px 0 80px;
+    padding: 50px 0 80px;
     background-color: #f9f9f9;
 
     &__title {
-        margin-bottom: 40px;
+        margin-bottom: 10px;
     }
 
     &__filter-btns {
-        margin-bottom: 80px;
+        margin-bottom: 70px;
         text-align: center;
     }
 
@@ -348,7 +352,7 @@
         color: #aaaaaa;
         cursor: pointer;
         padding: 0;
-        margin-right: 30px;
+        margin-right: 25px;
 
         &:last-child {
             margin-right: 0;
@@ -365,7 +369,7 @@
         width: 270px;
         padding: 30px 40px 40px 40px;
         background-color: #fcfcfc;
-        margin-bottom: 40px;
+        margin-bottom: 24px;
         display: flex;
         flex-direction: column;
         position: relative;
@@ -379,7 +383,7 @@
         flex: 1 1 auto;
         min-height: 206px;
         position: relative;
-        margin-bottom: 75px;
+        margin-bottom: 60px;
     }
 
     &__img {
@@ -463,11 +467,15 @@
     &__item {
         display: flex;
         flex-direction: column;
+
+        &--services {
+            margin-left: -110px;
+        }
     }
 
     &__item-title {
-        margin-bottom: 23px;
-        padding-top: 11px;
+        margin-bottom: 14px;
+        padding-top: 12px;
         font-size: 16px;
         color: #1f2044;
         @extend %dmsans-700;
@@ -493,7 +501,7 @@
 
     &__address,
     &__phone {
-        margin-bottom: 17px;
+        margin-bottom: 13px;
     }
 
     &__mail,
@@ -505,7 +513,7 @@
 .menu-services,
 .menu-account {
     &__item:not(:last-child) {
-        margin-bottom: 12px;
+        margin-bottom: 10px;
     }
 
     &__link {
@@ -518,7 +526,7 @@
         border: none;
         background-color: #fef7f0;
         height: 40px;
-        padding: 0 0 0 16px;
+        padding: 0 0px 0 16px;
 
         &::placeholder {
             font-size: 12px;
@@ -528,7 +536,7 @@
     }
 
     &__btn {
-        height: 39px;
+        height: 41px;
         border: none;
         background-color: $light-grey;
         padding: 0 18px 0 16px;
@@ -536,7 +544,7 @@
         @extend %dmsans-400;
         color: #fff;
         cursor: pointer;
-        margin-left: -4px;
+        margin-left: -15px;
         transition: background-color .5s;
 
         &:hover,
@@ -556,7 +564,7 @@
 }
 
 .footer-bottom {
-    padding: 40px 0 40px;
+    padding: 27px 0 27px;
     border-top: 1px solid $light-grey;
     display: flex;
     justify-content: space-between;
@@ -574,7 +582,7 @@
     }
 
     &__item {
-        padding: 0 14px;
+        padding: 0 17px;
         border-right: 1px solid $footer-text;
         line-height: 1;
 
@@ -611,5 +619,4 @@
             border: 1px solid $dark-grey;
         }
     }
-
 }
