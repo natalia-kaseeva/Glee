@@ -528,11 +528,12 @@
 
 .subscribe-form {
     &__field {
-        width: 170px;
+        max-width: 170px;
+        width: 100%;
         border: none;
         background-color: #fef7f0;
         height: 40px;
-        padding: 0 0px 0 16px;
+        padding: 0 10px 0 16px;
 
         &::placeholder {
             font-size: 12px;
