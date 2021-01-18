@@ -458,7 +458,6 @@
 
     &__items {
         display: flex;
-        //justify-content: space-between;
         font-size: 14px;
         line-height: 1.7;
         color: $footer-text;
@@ -467,10 +466,6 @@
     &__item {
         display: flex;
         flex-direction: column;
-
-        // //&--services {
-        //     margin-left: -110px;
-        // }
     }
 
     &__contact {
@@ -482,7 +477,7 @@
         width: 126px;
         margin-right: 180px;
     }
-    
+
     &__form {
         max-width: 270px;
         margin-left: auto;
@@ -505,11 +500,6 @@
 
 .connection {
     font-style: normal;
-
-    // //&__address {
-    //     max-width: 200px;
-    // }
-
     &__text {
         text-transform: uppercase;
     }
