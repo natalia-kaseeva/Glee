@@ -458,7 +458,7 @@
 
     &__items {
         display: flex;
-        justify-content: space-between;
+        //justify-content: space-between;
         font-size: 14px;
         line-height: 1.7;
         color: $footer-text;
@@ -468,9 +468,24 @@
         display: flex;
         flex-direction: column;
 
-        &--services {
-            margin-left: -110px;
-        }
+        // //&--services {
+        //     margin-left: -110px;
+        // }
+    }
+
+    &__contact {
+        width:200px;
+        margin-right: 95px;
+    }
+
+    &__nav-services {
+        width: 126px;
+        margin-right: 180px;
+    }
+    
+    &__form {
+        max-width: 270px;
+        margin-left: auto;
     }
 
     &__item-title {
@@ -491,9 +506,9 @@
 .connection {
     font-style: normal;
 
-    &__address {
-        max-width: 200px;
-    }
+    // //&__address {
+    //     max-width: 200px;
+    // }
 
     &__text {
         text-transform: uppercase;
@@ -523,6 +538,7 @@
 
 .subscribe-form {
     &__field {
+        width: 170px;
         border: none;
         background-color: #fef7f0;
         height: 40px;
@@ -544,7 +560,7 @@
         @extend %dmsans-400;
         color: #fff;
         cursor: pointer;
-        margin-left: -15px;
+        margin-left: -4px;
         transition: background-color .5s;
 
         &:hover,
