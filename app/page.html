@@ -48,135 +48,136 @@
                 </nav>
 
                 <div class="user-nav">
-                    <a href="#" class="user-nav__link user-nav__link--search"></a>
+                    <a href="#" class="user-nav__link user-nav__link--search">
+                        <span class="speak">Search</span>
+                    </a>
                     <div class="user-nav__box">
                         <a href="#" class="user-nav__link user-nav__link--heart">
-                            <span class="user-nav__num user-nav__num--heart">0</span>
-                        </a>
-                        <a href="#" class="user-nav__link user-nav__link--cart">
+                            <span class="speak">Add to wish list</span>
                             <span class="user-nav__num">0</span>
                         </a>
+                        <a href="#" class="user-nav__link user-nav__link--cart">
+                            <span class="speak">Add to cart</span>
+                            <span class="user-nav__num user-nav__num--cart">0</span>
+                        </a>
                     </div>
-                    <a href="#" class="user-nav__link user-nav__link--icon"></a>
+                    <a href="#" class="user-nav__link user-nav__link--icon">
+                        <span class="speak">Menu account</span>
+                    </a>
                 </div>
             </div>
         </div>
     </header>
 
-    <footer>
+    <main class="main"></main>
+
+    <footer class="footer">
         <div class="wrapper">
-            <div class="footer-top">
-                <div class="footer-top__items">
-                    <div class="footer-top__item footer-top__contact">
-                        <a class="footer-logo" href="#">
-                            <img class="footer-logo__img" src="images/logo.png" alt="logo">
+            <div class="footer__top">
+                <div class="footer__items">
+                    <div class="footer__item">
+                        <a class="footer__logo" href="#">
+                            <img class="footer__img" src="images/logo.png" alt="logo">
                         </a>
-                        <div class="footer-top__item-content">
-                            <address class="footer-top__connection connection">
-                                <div class="connection__address">
-                                    <span class="connection__text">Address:</span>
-                                    <span class="connection__location">4772 Wines Lane Houston, TX 77032</span>
-                                </div>
-                                <div class="connection__phone">
-                                    <span class="connection__text">Telephone:</span>
-                                    <a class="connection__tel" href="tel:+8323475843">+832-347-5843</a>
-                                </div>
-                                <div class="connection__email">
-                                    <span class="connection__text">Email:</span>
-                                    <a class="connection__mail" href="mailto:contact@Glee.com">contact@Glee.com</a>
-                                </div>
-                            </address>
+                        <address class="footer__connection connection">
+                            <p class="connection__item">
+                                ADDRESS:
+                                4772 Wines Lane Houston, TX 77032
+                            </p>
+
+                            <a class="connection__item" href="tel:+8323475843">
+                                TELEPHONE:
+                                +832-347-5843
+                            </a>
+
+                            <a class="connection__item" href="mailto:contact@Glee.com">
+                                EMAIL:
+                                contact@Glee.com
+                            </a>
+                        </address>
+                    </div>
+
+                    <div class="footer__item footer__item--services">
+                        <span class="footer__title">Services</span>
+                        <div class="footer__menu">
+                            <ul class="footer__list">
+                                <li class="footer__item">
+                                    <a class="footer__link" href="#">About us</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a class="footer__link" href="#">Return Policy</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a class="footer__link" href="#">Our Blog</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a class="footer__link" href="#">Contact Us</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a class="footer__link" href="#">Terms & Condition</a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
 
-                    <div class="footer-top__item footer-top__nav-services">
-                        <h2 class="footer-top__item-title">Services</h2>
-                        <div class="footer-top__item-content">
-                            <nav class="menu-services">
-                                <ul class="menu-services__list">
-                                    <li class="menu-services__item">
-                                        <a class="menu-services__link" href="#">About us</a>
-                                    </li>
-                                    <li class="menu-services__item">
-                                        <a class="menu-services__link" href="#">Return Policy</a>
-                                    </li>
-                                    <li class="menu-services__item">
-                                        <a class="menu-services__link" href="#">Our Blog</a>
-                                    </li>
-                                    <li class="menu-services__item">
-                                        <a class="menu-services__link" href="#">Contact Us</a>
-                                    </li>
-                                    <li class="menu-services__item">
-                                        <a class="menu-services__link" href="#">Terms & Condition</a>
-                                    </li>
-                                </ul>
-                            </nav>
+                    <div class="footer__item">
+                        <span class="footer__title">Account</span>
+                        <div class="footer__menu">
+                            <ul class="footer__list">
+                                <li class="footer__item">
+                                    <a class="footer__link" href="#">Your Account</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a class="footer__link" href="#">Checkout</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a class="footer__link" href="#">Login</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a class="footer__link" href="#">Register</a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
 
-                    <div class="footer-top__item footer-top__nav-account">
-                        <h2 class="footer-top__item-title">Account</h2>
-                        <div class="footer-top__item-content">
-                            <nav class="menu-account">
-                                <ul class="menu-account__list">
-                                    <li class="menu-account__item">
-                                        <a class="menu-account__link" href="#">Your Account</a>
-                                    </li>
-                                    <li class="menu-account__item">
-                                        <a class="menu-account__link" href="#">Checkout</a>
-                                    </li>
-                                    <li class="menu-account__item">
-                                        <a class="menu-account__link" href="#">Login</a>
-                                    </li>
-                                    <li class="menu-account__item">
-                                        <a class="menu-account__link" href="#">Register</a>
-                                    </li>
-                                </ul>
-                            </nav>
+                    <div class="footer__item footer__item--form">
+                        <span class="footer__title">newsletter</span>
+                        <div class="footer__text">
+                            Subscribe by our newsletter and get update protidin.
                         </div>
+                        <form class="subscribe-form">
+                            <label class="subscribe-form__label">
+                                <span class="speak">Enter email to subscribe to updates</span>
+                                <input class="subscribe-form__field" type="email" name="email"
+                                    placeholder="Email address">
+                            </label>
+                            <button class="subscribe-form__btn" type="submit">Subscribe</button>
+                        </form>
                     </div>
-
-                    <div class="footer-top__item footer-top__form">
-                        <h2 class="footer-top__item-title">newsletter</h2>
-                        <div class="footer-top__item-content">
-                            <div class="footer-top__text">
-                                Subscribe by our newsletter and get update protidin.
-                            </div>
-                            <form class="subscribe-form">
-                                <label class="subscribe-form__label">
-                                    <input class="subscribe-form__field" type="email" name="email"
-                                        placeholder="Email address">
-                                </label>
-                                <button class="subscribe-form__btn" type="submit">Subscribe</button>
-                            </form>
-                        </div>
-                    </div>
-
                 </div>
             </div>
 
-            <div class="footer-bottom">
-                <div class="footer-bottom__text">
+            <div class="footer__bottom">
+                <div class="footer__copy">
                     ©2020 CopyRight Example. All rights reserved.
                 </div>
-                <nav class="footer-menu">
-                    <ul class="footer-menu__list">
-                        <li class="footer-menu__item">
-                            <a class="footer-menu__link" href="#">Home</a>
+                <div class="footer__bottom-menu">
+                    <ul class="footer__bottom-list">
+                        <li class="footer__bottom-item">
+                            <a class="footer__bottom-link" href="#">Home</a>
                         </li>
-                        <li class="footer-menu__item">
-                            <a class="footer-menu__link" href="#">About</a>
+                        <li class="footer__bottom-item">
+                            <a class="footer__bottom-link" href="#">About</a>
                         </li>
-                        <li class="footer-menu__item">
-                            <a class="footer-menu__link" href="#">Blog</a>
+                        <li class="footer__bottom-item">
+                            <a class="footer__bottom-link" href="#">Blog</a>
                         </li>
-                        <li class="footer-menu__item">
-                            <a class="footer-menu__link" href="#">Contact</a>
+                        <li class="footer__bottom-item">
+                            <a class="footer__bottom-link" href="#">Contact</a>
                         </li>
                     </ul>
-                </nav>
+                </div>
             </div>
-        </div>
     </footer>
 
     <script src="js/main.min.js"></script>

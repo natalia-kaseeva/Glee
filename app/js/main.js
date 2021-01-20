@@ -4,5 +4,5 @@ $(function(){
         arrows:false
     });
 
-    var mixer = mixitup('.product__cards');
+    var mixer = mixitup('.products__cards');
 });

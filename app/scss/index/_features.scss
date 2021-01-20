@@ -1,0 +1,65 @@
+.features {
+    &__wrapper {
+        background-color: #fef7f0;
+    }
+
+    &__inner {
+        max-width: 1470px;
+        margin: 0 auto;
+        background-color: #fef7f0;
+    }
+
+    &__items {
+        min-height: 170px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__item {
+        position: relative;
+        padding-left: 75px;
+        max-width: 300px;
+
+        &--clock {
+            max-width: 280px;
+        }
+
+        &--payment {
+            padding-left: 90px;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 10px;
+            left: 0;
+            width: 55px;
+            height: 55px;
+            background-repeat: no-repeat;
+        }
+
+        &--clock::before {
+            background-image: url('../images/features/icon-clock.svg');
+        }
+
+        &--van::before {
+            background-image: url('../images/features/icon-van.svg');
+        }
+
+        &--payment::before {
+            background-image: url('../images/features/icon-payment.svg');
+        }
+    }
+
+    &__title {
+        @extend %dmsans-700;
+        font-size: 18px;
+        color: #414141;
+    }
+
+    &__text {
+        color: #585858;
+        @extend %dmsans-400;
+    }
+}

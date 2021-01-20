@@ -1,0 +1,145 @@
+.footer {
+    &__top {
+        padding: 80px 0 63px;
+    }
+
+    &__logo {
+        display: inline-block;
+        margin-bottom: 26px;
+    }
+
+    &__items {
+        display: flex;
+        font-size: 14px;
+        line-height: 1.7;
+        color: $grey;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+
+        &--services {
+            margin-right: 182px;
+        }
+
+        &--form {
+            max-width: 270px;
+            margin-left: auto;
+        }
+    }
+
+    &__connection {
+        max-width: 200px;
+        margin-right: 100px;
+    }
+
+    &__title {
+        margin-bottom: 14px;
+        padding-top: 15px;
+        font-size: 16px;
+        color: #1f2044;
+        @extend %dmsans-700;
+        text-transform: uppercase;
+    }
+
+    &__item:not(:last-child) {
+        margin-bottom: 9px;
+    }
+
+    &__link {
+        color: $grey;
+    }
+
+    &__text {
+        margin-bottom: 34px;
+    }
+
+    &__bottom {
+        padding: 29px 0 27px;
+        border-top: 1px solid $light-grey;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 14px;
+        color: $grey;
+    }
+
+    &__bottom-list {
+        display: flex;
+    }
+
+    &__bottom-item {
+        padding: 0 15px;
+        border-right: 1px solid $grey;
+        line-height: 1.2;
+
+        &:last-child {
+            padding-right: 0;
+            border-right: none;
+        }
+    }
+
+    &__bottom-link {
+        font-size: 14px;
+        color: $grey;
+    }
+}
+
+.connection {
+    font-style: normal;
+
+    &__item {
+        display: block;
+        color: $grey;
+        margin-bottom: 11px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.subscribe-form {
+    &__field {
+        max-width: 170px;
+        width: 100%;
+        border: none;
+        background-color: #fef7f0;
+        height: 40px;
+        padding: 0 10px 0 16px;
+
+        &::placeholder {
+            font-size: 12px;
+            @extend %dmsans-400;
+            color: #234969;
+        }
+    }
+
+    &__btn {
+        height: 41px;
+        border: none;
+        background-color: $light-grey;
+        padding: 0 18px 0 16px;
+        font-size: 14px;
+        @extend %dmsans-400;
+        color: #fff;
+        cursor: pointer;
+        margin-left: -4px;
+        transition: background-color .5s;
+
+        &:hover,
+        &:active {
+            background-color: $dark-blue;
+        }
+    }
+
+    &__field,
+    &__btn {
+        outline: transparent;
+
+        &:focus {
+            border: 1px solid $dark-blue;
+        }
+    }
+}
