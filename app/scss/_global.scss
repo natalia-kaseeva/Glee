@@ -20,12 +20,10 @@ body {
     max-width: 1800px;
     margin: 0 auto;
     padding: 0 15px;
-}
 
-.wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
+    &--small {
+        max-width: 1200px;
+    }
 }
 
 .speak {
@@ -48,12 +46,22 @@ body {
     padding: 0;
 }
 
+.logo {
+    border: 1px solid transparent;
+    outline: transparent;
+    transition: all .5s;
+
+    &:focus {
+        border: 1px solid $orange;
+    }
+}
+
 .filter-btns {
     text-align: center;
 
     &__btn {
         background-color: transparent;
-        border: none;
+        border: 1px solid transparent;
         @extend %dmsans-700;
         font-size: 16px;
         color: #aaaaaa;
@@ -61,14 +69,23 @@ body {
         padding: 0;
         margin-right: 26px;
         outline: transparent;
+        transition: all .5s;
 
         &:last-child {
             margin-right: 0;
         }
 
         &:focus {
-            padding: 5px 5px;
-            border: 1px solid $accent-color;
+            border: 1px solid $orange;
+        }
+
+        &:hover {
+            color: $black;
+            border-bottom: 1px solid $black;
+        }
+
+        &:active {
+            color: $orange;
         }
     }
 }
@@ -133,6 +150,7 @@ body {
         border: none;
         border-radius: 50%;
         box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+        fill: rgb(163, 187, 200);
         transition: all .5s;
 
         &:hover {

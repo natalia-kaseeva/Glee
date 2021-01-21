@@ -8,29 +8,3 @@
 @import 'index/slider';
 @import 'index/features';
 @import 'index/products';
-
-
-
-
-.menu-services,
-.menu-account,
-.footer-menu {
-    &__link {
-        outline: transparent;
-
-        &:hover {
-            color: $dark-grey;
-            border-bottom: 1px solid $dark-grey;
-            @extend %dmsans-700;
-        }
-
-        &:active {
-            color: $dark-grey;
-            @extend %dmsans-700;
-        }
-
-        &:focus {
-            border: 1px solid $dark-grey;
-        }
-    }
-}

@@ -5,7 +5,7 @@
 
     &__logo {
         display: inline-block;
-        margin-bottom: 26px;
+        margin-bottom: 25px;
     }
 
     &__items {
@@ -44,11 +44,7 @@
     }
 
     &__item:not(:last-child) {
-        margin-bottom: 9px;
-    }
-
-    &__link {
-        color: $grey;
+        margin-bottom: 7px;
     }
 
     &__text {
@@ -56,7 +52,7 @@
     }
 
     &__bottom {
-        padding: 29px 0 27px;
+        padding: 30px 0 27px;
         border-top: 1px solid $light-grey;
         display: flex;
         justify-content: space-between;
@@ -70,7 +66,7 @@
     }
 
     &__bottom-item {
-        padding: 0 15px;
+        padding: 0 14px;
         border-right: 1px solid $grey;
         line-height: 1.2;
 
@@ -80,9 +76,25 @@
         }
     }
 
+    &__link,
     &__bottom-link {
-        font-size: 14px;
         color: $grey;
+        border: 1px solid transparent;
+        outline: transparent;
+        transition: all .5s;
+
+        &:focus {
+            border: 1px solid $orange;
+        }
+
+        &:hover {
+            color: $black;
+            border-bottom: 1px solid $black;
+        }
+
+        &:active {
+            color: $orange;
+        }
     }
 }
 
@@ -92,10 +104,25 @@
     &__item {
         display: block;
         color: $grey;
-        margin-bottom: 11px;
+        margin-bottom: 9px;
+        border: 1px solid transparent;
+        outline: transparent;
+        transition: all .5s;
 
         &:last-child {
             margin-bottom: 0;
+        }
+
+        &:focus {
+            border: 1px solid $orange;
+        }
+
+        &:hover {
+            color: $black;
+        }
+
+        &:active {
+            color: $orange;
         }
     }
 }
@@ -104,42 +131,47 @@
     &__field {
         max-width: 170px;
         width: 100%;
-        border: none;
+        border: 1px solid transparent;
         background-color: #fef7f0;
         height: 40px;
         padding: 0 10px 0 16px;
+        outline: transparent;
 
         &::placeholder {
             font-size: 12px;
             @extend %dmsans-400;
             color: #234969;
         }
+
+        &:focus {
+            border: 1px solid $orange;
+        }
     }
 
     &__btn {
         height: 41px;
-        border: none;
+        border: 1px solid transparent;
         background-color: $light-grey;
-        padding: 0 18px 0 16px;
+        padding: 0 17px 0 16px;
         font-size: 14px;
         @extend %dmsans-400;
         color: #fff;
         cursor: pointer;
         margin-left: -4px;
         transition: background-color .5s;
-
-        &:hover,
-        &:active {
-            background-color: $dark-blue;
-        }
-    }
-
-    &__field,
-    &__btn {
         outline: transparent;
+        transition: all .5s;
 
         &:focus {
-            border: 1px solid $dark-blue;
+            border: 1px solid $orange;
+        }
+
+        &:hover {
+            background-color: $dark-blue;
+        }
+
+        &:active {
+            background-color: $orange;
         }
     }
 }

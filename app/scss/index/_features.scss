@@ -6,33 +6,43 @@
     &__inner {
         max-width: 1470px;
         margin: 0 auto;
-        background-color: #fef7f0;
     }
 
     &__items {
-        min-height: 170px;
+        min-height: 171px;
         display: flex;
-        justify-content: space-between;
         align-items: center;
     }
 
     &__item {
         position: relative;
         padding-left: 75px;
-        max-width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 171px;
+        width: 33, 33%;
 
         &--clock {
-            max-width: 280px;
+            border-right: 1px solid #e8e4df;
+            padding-right: 33px;
+        }
+
+        &--van {
+            border-right: 1px solid #e8e4df;
+            margin-left: 163px;
+            padding-right: 152px;
         }
 
         &--payment {
-            padding-left: 90px;
+            margin-left: auto;
+            max-width: 286px;
         }
 
         &::before {
             content: "";
             position: absolute;
-            top: 10px;
+            top: 48px;
             left: 0;
             width: 55px;
             height: 55px;
