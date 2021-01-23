@@ -1,0 +1,12 @@
+.partners-slider {
+    padding: 265px 0 87px;
+    margin-top: -169px;
+    background-color: #fef7f0;
+    &__inner {
+        max-width: 1045px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

@@ -1,0 +1,33 @@
+.filter-btns {
+    text-align: center;
+
+    &__btn {
+        background-color: transparent;
+        border: 1px solid transparent;
+        @extend %dmsans-700;
+        font-size: 16px;
+        color: #aaaaaa;
+        cursor: pointer;
+        padding: 0;
+        margin-right: 26px;
+        outline: transparent;
+        transition: all .5s;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &:focus {
+            border: 1px solid $orange;
+        }
+
+        &:hover {
+            color: $black;
+            border-bottom: 1px solid $black;
+        }
+
+        &:active {
+            color: $orange;
+        }
+    }
+}

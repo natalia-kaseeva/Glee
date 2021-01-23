@@ -21,17 +21,17 @@
         flex-direction: column;
         justify-content: center;
         height: 171px;
-        width: 33, 33%;
+        width: 33.33%;
 
         &--clock {
             border-right: 1px solid #e8e4df;
-            padding-right: 33px;
+            width: 28.5%;
         }
 
         &--van {
             border-right: 1px solid #e8e4df;
-            margin-left: 163px;
-            padding-right: 152px;
+            margin-left: auto;
+            width: 30%;
         }
 
         &--payment {

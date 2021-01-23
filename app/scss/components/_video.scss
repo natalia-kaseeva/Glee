@@ -1,0 +1,27 @@
+.video {
+    background-color: #e6e6e6;
+    height: 501px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+    }
+
+    &__link path {
+        transition: fill 0.5s;
+    }
+    
+    &__link:hover path:nth-child(2) {
+        fill: $dark-grey;
+    }
+}

@@ -4,5 +4,11 @@ $(function(){
         arrows:false
     });
 
+    // $('.partners-slider__inner').slick({
+    //     infinite: true,
+    //     slidesToShow: 5,
+    //     slidesToScroll: 3
+    //   });
+
     var mixer = mixitup('.products__cards');
 });
