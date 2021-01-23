@@ -1,0 +1,14 @@
+.design {
+    padding: 65px 0 117px;
+
+    &__filter-btns {
+        margin-bottom: 70px;
+    }
+
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 30px;
+    }
+}
