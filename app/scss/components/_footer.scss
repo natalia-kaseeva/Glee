@@ -79,22 +79,7 @@
     &__link,
     &__bottom-link {
         color: $grey;
-        border: 1px solid transparent;
-        outline: transparent;
-        transition: all .5s;
-
-        &:focus {
-            border: 1px solid $orange;
-        }
-
-        &:hover {
-            color: $black;
-            border-bottom: 1px solid $black;
-        }
-
-        &:active {
-            color: $orange;
-        }
+        @extend %animation-menu;
     }
 }
 
@@ -105,24 +90,10 @@
         display: block;
         color: $grey;
         margin-bottom: 9px;
-        border: 1px solid transparent;
-        outline: transparent;
-        transition: all .5s;
+        @extend %animation-link;
 
         &:last-child {
             margin-bottom: 0;
-        }
-
-        &:focus {
-            border: 1px solid $orange;
-        }
-
-        &:hover {
-            color: $black;
-        }
-
-        &:active {
-            color: $orange;
         }
     }
 }
@@ -136,6 +107,8 @@
         height: 40px;
         padding: 0 10px 0 16px;
         outline: transparent;
+        cursor: pointer;
+        transition: background-color .5s;
 
         &::placeholder {
             font-size: 12px;
@@ -145,6 +118,10 @@
 
         &:focus {
             border: 1px solid $orange;
+        }
+
+        &:hover {
+            background-color: #fce6cf;
         }
     }
 
@@ -158,20 +135,10 @@
         color: #fff;
         cursor: pointer;
         margin-left: -4px;
-        transition: background-color .5s;
-        outline: transparent;
-        transition: all .5s;
+        @extend %animation-button-grey;
 
         &:focus {
             border: 1px solid $orange;
-        }
-
-        &:hover {
-            background-color: $dark-blue;
-        }
-
-        &:active {
-            background-color: $orange;
         }
     }
 }

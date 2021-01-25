@@ -1,11 +1,16 @@
 @import 'vars';
 @import 'fonts';
 @import 'reset';
+@import 'libs';
 @import 'global';
 
+
 @import 'components/header';
+@import 'components/logo';
 @import 'components/footer';
-@import 'components/_cards';
+@import 'components/_card';
+@import 'components/card-small';
+@import 'components/card-blog';
 @import 'components/_filter';
 @import 'components/_video';
 @import 'index/slider';

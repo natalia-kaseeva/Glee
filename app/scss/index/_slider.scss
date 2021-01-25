@@ -18,11 +18,11 @@
     &__title {
         @extend %rubik-500;
         display: inline-block;
-        font-size: 70px;
+        font-size: 72px;
         line-height: 1;
         text-transform: uppercase;
-        margin-bottom: 26px;
-        letter-spacing: 1.2px;
+        margin-bottom: 20px;
+        //letter-spacing: 1.2px;
     }
 
     &__text {
@@ -46,21 +46,7 @@
         color: #ffffff;
         padding: 15px 21px 16px 28px;
         background-color: $light-grey;
-        outline: transparent;
-        border: 1px solid transparent;
-        transition: all .5s;
-
-        &:focus {
-            border: 1px solid $black;
-        }
-
-        &:hover {
-            background-color: $dark-blue;
-        }
-
-        &:active {
-            background-color: $black;
-        }
+        @extend %animation-button-grey;
     }
 
     &__arrow {
@@ -81,6 +67,7 @@
     }
 
     .slick-dots button {
+        cursor: pointer;
         background-color: #fde3cc;
         width: 30px;
         height: 30px;
@@ -91,15 +78,19 @@
         padding: 0;
         outline: transparent;
         border: 1px solid transparent;
-        transition: border .5s;
+        transition: all .5s;
     }
 
     .slick-dots button:focus {
         border: 1px solid $orange;
-
     }
 
-    .slick-dots .slick-active button {
+    .slick-dots button:hover {
+        background-color: $light-grey;
+        color: #fff;
+    }
+
+    .slick-active button {
         background-color: #fff;
     }
 }

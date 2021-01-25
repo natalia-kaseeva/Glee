@@ -1,8 +1,8 @@
 .design {
-    padding: 65px 0 117px;
+    padding: 85px 0 123px;
 
     &__filter-btns {
-        margin-bottom: 70px;
+        margin-bottom: 85px;
     }
 
     &__cards {
@@ -10,5 +10,9 @@
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
         grid-gap: 30px;
+    }
+
+    ul.design__filter-btns {
+        margin-bottom: 74px;
     }
 }

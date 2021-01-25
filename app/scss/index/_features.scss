@@ -71,5 +71,9 @@
     &__text {
         color: #585858;
         @extend %dmsans-400;
+
+        &--small {
+            max-width: 205px;
+        }
     }
 }

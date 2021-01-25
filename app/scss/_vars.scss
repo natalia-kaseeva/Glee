@@ -31,3 +31,106 @@ $orange: #f99036;
     font-family: 'Rubik', sans-serif;
     font-weight: 500;
 }
+
+%animation-menu {
+    border: 1px solid transparent;
+    outline: transparent;
+    transition: color .5s,
+                border .5s;
+
+    &:focus {
+        border: 1px solid $orange;
+    }
+
+    &:hover {
+        color: $black;
+        border-bottom: 1px solid $black;
+    }
+
+    &:active {
+        color: $orange;
+    }
+}
+
+%animation-button-grey {
+    outline: transparent;
+    border: 1px solid transparent;
+    transition: border .5s,
+                background-color .5s;
+
+    &:focus {
+        border: 1px solid $black;
+    }
+
+    &:hover {
+        background-color: $dark-blue;
+    }
+
+    &:active {
+        background-color: $black;
+    }
+}
+
+%animation-button-light {
+    outline: transparent;
+    transition: color .5s,
+                background-color .5s;
+                color: .5s;
+
+    &:focus {
+        border: 1px solid $orange;
+    }
+
+    &:hover {
+        background-color: $light-grey;
+        color: #fff;
+    }
+
+    &:active {
+        background-color: $black;
+        color: #fff;
+    }
+}
+
+%animation-link {
+    border: 1px solid transparent;
+    outline: transparent;
+    transition: color .5s,
+                border .5s;
+
+    &:focus {
+        border: 1px solid $orange;
+    }
+
+    &:hover {
+        color: $black;
+    }
+
+    &:active {
+        color: $orange;
+    }
+}
+
+%animation-icon-link {
+    border: 1px solid transparent;
+    outline: transparent;
+    transition: border .5s,
+                background-color .5s;
+
+    &:focus {
+        border: 1px solid $orange;
+    }
+
+    &:active {
+        background-color: $accent-color;
+    }
+}
+
+@function max($numbers...) {
+    @return m#{a}x(#{$numbers});
+}
+@function min($numbers...) {
+    @return m#{i}x(#{$numbers});
+}
+
+

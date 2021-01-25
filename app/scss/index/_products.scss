@@ -1,17 +1,11 @@
 .products {
     &__inner {
-        //background-color: #f9f9f9;
-        padding: 55px 0 0;
+        padding: 50px 0 0;
         margin-bottom: 144px;
     }
-    
 
     &__title {
         margin-bottom: 10px;
-    }
-
-    &__filter-btns {
-        margin-bottom: 70px;
     }
 
     &__cards {
@@ -19,16 +13,16 @@
         justify-content: space-between;
         flex-wrap: wrap;
     }
+}
 
-    .mixitup-control-active {
-        color: $black;
-    }
+ul.products__filter-btns {
+    margin-bottom: 70px;
 }
 
 .special-product {
     &__items {
         display: flex;
-        
+
     }
 
     &__item {
@@ -60,7 +54,7 @@
         max-width: 348px;
 
         &--wide {
-            margin-left: 434px;
+            margin-left: 433px;
             margin-right: 147px;
             margin-top: 87px;
         }
@@ -89,10 +83,16 @@
         font-size: 15px;
         @extend %rubik-500;
         color: #436372;
+        @extend %animation-button-light;
     }
 
     &__link path {
         fill: #436372;
+        transition: fill .5s;
+    }
+
+    &__link:hover path {
+        fill: #fff;
     }
 
     &__arrow {

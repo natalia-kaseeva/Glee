@@ -25,7 +25,7 @@
                 <nav class="menu">
                     <ul class="menu__list">
                         <li class="menu__item">
-                            <a href=#" class="menu__link menu__link--active">Home +</a>
+                            <a href="#" class="menu__link menu__link--active">Home +</a>
                         </li>
                         <li class="menu__item">
                             <a href="#" class="menu__link">About</a>
@@ -52,11 +52,11 @@
                         <span class="speak">Search</span>
                     </a>
                     <div class="user-nav__box">
-                        <a href="#" class="user-nav__link user-nav__link--heart">
+                        <a href="#" class="user-nav__box-link user-nav__box-link--heart">
                             <span class="speak">My wish list</span>
                             <span class="user-nav__num">0</span>
                         </a>
-                        <a href="#" class="user-nav__link user-nav__link--cart">
+                        <a href="#" class="user-nav__box-link user-nav__box-link--cart">
                             <span class="speak">My cart</span>
                             <span class="user-nav__num user-nav__num--cart">0</span>
                         </a>
@@ -99,7 +99,7 @@
                                 <p class="slider__text">Dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                                     tempor
                                     incididunt</p>
-                                <a href="#" class="slider__link">Shop Now
+                                <a href="#" class="slider__link button">Shop Now
                                     <svg class="slider__arrow" xmlns="http://www.w3.org/2000/svg"
                                         xmlns:xlink="http://www.w3.org/1999/xlink" width="22px" height="9px">
                                         <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
@@ -141,7 +141,8 @@
                         <div class="features__items">
                             <div class="features__item features__item--clock">
                                 <span class="features__title">Support 24/7.</span>
-                                <p class="features__text">Contact us 24 hours a day, 7 days a week.</p>
+                                <p class="features__text features__text--small">Contact us 24 hours a day, 7 days a
+                                    week.</p>
                             </div>
                             <div class="features__item features__item--van">
                                 <span class="features__title">Delivery.</span>
@@ -163,17 +164,28 @@
                 <div class="products__inner">
                     <div class="container container--small">
                         <h2 class="title products__title">Products of the week</h2>
-                        <div class="filter-btns products__filter-btns">
-                            <button class="filter-btns__btn" type="button" data-filter="all">All
-                            </button>
-                            <button class="filter-btns__btn" type="button"
-                                data-filter=".category-furnitures">Furnitures</button>
-                            <button class="filter-btns__btn" type="button"
-                                data-filter=".category-chairs">Chairs</button>
-                            <button class="filter-btns__btn" type="button"
-                                data-filter=".category-lighting">Lighting</button>
-                            <button class="filter-btns__btn" type="button" data-filter=".category-decor">Decor</button>
-                        </div>
+                        <ul class="filter-btns products__filter-btns">
+                            <li class="filter-btns__item">
+                                <button class="filter-btns__btn" type="button" data-filter="all">All
+                                </button>
+                            </li>
+                            <li class="filter-btns__item">
+                                <button class="filter-btns__btn" type="button"
+                                    data-filter=".category-furnitures">Furnitures</button>
+                            </li>
+                            <li class="filter-btns__item">
+                                <button class="filter-btns__btn" type="button"
+                                    data-filter=".category-chairs">Chairs</button>
+                            </li>
+                            <li class="filter-btns__item">
+                                <button class="filter-btns__btn" type="button"
+                                    data-filter=".category-lighting">Lighting</button>
+                            </li>
+                            <li class="filter-btns__item">
+                                <button class="filter-btns__btn" type="button"
+                                    data-filter=".category-decor">Decor</button>
+                            </li>
+                        </ul>
 
                         <div class="products__cards">
                             <div class="products__card card mix category-chairs">
@@ -511,34 +523,45 @@
         <section class="design">
             <div class="container container--small">
                 <h2 class="title design__title">New Design</h2>
-                <div class="filter-btns design__filter-btns">
-                    <button class="filter-btns__btn" type="button" data-filter="all">All
-                    </button>
-                    <button class="filter-btns__btn" type="button"
-                        data-filter=".category-furnitures">Furnitures</button>
-                    <button class="filter-btns__btn" type="button" data-filter=".category-chairs">Chairs</button>
-                    <button class="filter-btns__btn" type="button" data-filter=".category-lighting">Lighting</button>
-                    <button class="filter-btns__btn" type="button" data-filter=".category-decor">Decor</button>
-                </div>
+                <ul class="filter-btns design__filter-btns">
+                    <li class="filter-btns__item">
+                        <button class="filter-btns__btn" type="button" data-filter="all">All
+                        </button>
+                    </li>
+                    <li class="filter-btns__item">
+                        <button class="filter-btns__btn" type="button"
+                            data-filter=".category-furnitures">Furnitures</button>
+                    </li>
+                    <li class="filter-btns__item">
+                        <button class="filter-btns__btn" type="button" data-filter=".category-chairs">Chairs</button>
+                    </li>
+                    <li class="filter-btns__item">
+                        <button class="filter-btns__btn" type="button"
+                            data-filter=".category-lighting">Lighting</button>
+                    </li>
+                    <li class="filter-btns__item">
+                        <button class="filter-btns__btn" type="button" data-filter=".category-decor">Decor</button>
+                    </li>
+                </ul>
 
                 <div class="design__cards">
-                    <div class="design__card card-small">
+                    <div class="design__card card-small mix category-furnitures">
                         <img class="card-small__img" src="images/design/design-1.jpg" alt="sofa">
                         <div class="card-small__content">
-                            <h3 class="card-small__title">Beat Flat Pendant  Black</h3>
+                            <h3 class="card-small__title">Beat Flat Pendant Black</h3>
                             <span class="card-small__category">Classic</span>
                         </div>
                     </div>
 
-                    <div class="design__card card-small">
+                    <div class="design__card card-small category-furnitures">
                         <img class="card-small__img" src="images/design/design-2.jpg" alt="bed">
                         <div class="card-small__content">
-                            <h3 class="card-small__title">Lampe Sur Pieds  Bamboo</h3>
+                            <h3 class="card-small__title">Lampe Sur Pieds Bamboo</h3>
                             <span class="card-small__category">Classic</span>
                         </div>
                     </div>
 
-                    <div class="design__card card-small">
+                    <div class="design__card card-small mix category-chairs">
                         <img class="card-small__img" src="images/design/design-3.jpg" alt="chair">
                         <div class="card-small__content">
                             <h3 class="card-small__title">Rattan Rocking Chair</h3>
@@ -546,7 +569,7 @@
                         </div>
                     </div>
 
-                    <div class="design__card card-small">
+                    <div class="design__card card-small category-furnitures">
                         <img class="card-small__img" src="images/design/design-4.jpg" alt="bed">
                         <div class="card-small__content">
                             <h3 class="card-small__title">Rattan Rocking Chair</h3>
@@ -554,7 +577,7 @@
                         </div>
                     </div>
 
-                    <div class="design__card card-small">
+                    <div class="design__card card-small mix category-chairs">
                         <img class="card-small__img" src="images/design/design-5.jpg" alt="chair">
                         <div class="card-small__content">
                             <h3 class="card-small__title">Rattan Rocking Chair</h3>
@@ -562,10 +585,10 @@
                         </div>
                     </div>
 
-                    <div class="design__card card-small">
+                    <div class="design__card card-small category-decor">
                         <img class="card-small__img" src="images/design/design-6.jpg" alt="sofa">
                         <div class="card-small__content">
-                            <h3 class="card-small__title">Lampe Sur Pieds  Bamboo</h3>
+                            <h3 class="card-small__title">Lampe Sur Pieds Bamboo</h3>
                             <span class="card-small__category">Classic</span>
                         </div>
                     </div>
@@ -574,7 +597,7 @@
         </section>
 
         <div class="video" style="background-image: url('images/video-bg.jpg');">
-            <a class="video__link" data-fancybox href="https://youtu.be/rj7xMBxd5iY">
+            <a class="video__link" data-fancybox href="https://youtu.be/gC8ec_y6ewg">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="127px"
                     height="127px">
                     <path fill-rule="evenodd" opacity="0.4" fill="rgb(163, 187, 200)"
@@ -599,9 +622,9 @@
                         <img class="card-blog__img" src="images/news/news-1.jpg" alt="interior design">
                         <a class="card-blog__link" href="#">news</a>
                         <div class="card-blog__content">
-                            <p class="card-blog__desc">
+                            <a class="card-blog__desc">
                                 Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-                            </p>
+                            </a>
                             <div class="card-blog__info">
                                 <span class="card-blog__item">28 january, 2020</span>
                                 <a class="card-blog__item" href="#">by admin</a>
@@ -613,12 +636,12 @@
                         <img class="card-blog__img" src="images/news/news-2.jpg" alt="interior design">
                         <a class="card-blog__link" href="#">news</a>
                         <div class="card-blog__content">
-                            <p class="card-blog__desc">
+                            <a class="card-blog__desc">
                                 Aonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                            </p>
+                            </a>
                             <div class="card-blog__info">
-                                <span class="card-blog__item"> 28 january, 2020</span>
-                                <a class="card-blog__item" href="#"> by admin</a>
+                                <span class="card-blog__item">28 january, 2020</span>
+                                <a class="card-blog__item" href="#">by admin</a>
                             </div>
                         </div>
                     </div>
@@ -627,12 +650,12 @@
                         <img class="card-blog__img" src="images/news/news-3.jpg" alt="interior design">
                         <a class="card-blog__link" href="#">news</a>
                         <div class="card-blog__content">
-                            <p class="card-blog__desc">
+                            <a class="card-blog__desc">
                                 Rncididunt ut labore et dolore magna aliqua. Ut enim
-                            </p>
+                            </a>
                             <div class="card-blog__info">
-                                <span class="card-blog__item"> 28 january, 2020</span>
-                                <a class="card-blog__item" href="#"> by admin</a>
+                                <span class="card-blog__item">28 january, 2020</span>
+                                <a class="card-blog__item" href="#">by admin</a>
                             </div>
                         </div>
                     </div>
@@ -647,20 +670,28 @@
                 </div>
 
                 <div class="partners-slider__item">
-                    <img class="partners-slider__img" src="images/partners/logo_partner-2.png" alt="partner 1">
+                    <img class="partners-slider__img" src="images/partners/logo_partner-2.png" alt="partner 2">
                 </div>
 
                 <div class="partners-slider__item">
-                    <img class="partners-slider__img" src="images/partners/logo_partner-3.png" alt="partner 1">
+                    <img class="partners-slider__img" src="images/partners/logo_partner-3.png" alt="partner 3">
                 </div>
 
                 <div class="partners-slider__item">
-                    <img class="partners-slider__img" src="images/partners/logo_partner-4.png" alt="partner 1">
+                    <img class="partners-slider__img" src="images/partners/logo_partner-4.png" alt="partner 4">
                 </div>
 
                 <div class="partners-slider__item">
-                    <img class="partners-slider__img" src="images/partners/logo_partner-5.png" alt="partner 1">
+                    <img class="partners-slider__img" src="images/partners/logo_partner-5.png" alt="partner 5">
                 </div>
+
+                <!-- <div class="partners-slider__item">
+                    <img class="partners-slider__img" src="images/partners/logo_partner-4.png" alt="partner 6">
+                </div>
+
+                <div class="partners-slider__item">
+                    <img class="partners-slider__img" src="images/partners/logo_partner-5.png" alt="partner 7">
+                </div> -->
             </div>
         </div>
 
@@ -694,45 +725,41 @@
 
                     <div class="footer__item footer__item--services">
                         <span class="footer__title">Services</span>
-                        <div class="footer__menu">
-                            <ul class="footer__list">
-                                <li class="footer__item">
-                                    <a class="footer__link" href="#">About us</a>
-                                </li>
-                                <li class="footer__item">
-                                    <a class="footer__link" href="#">Return Policy</a>
-                                </li>
-                                <li class="footer__item">
-                                    <a class="footer__link" href="#">Our Blog</a>
-                                </li>
-                                <li class="footer__item">
-                                    <a class="footer__link" href="#">Contact Us</a>
-                                </li>
-                                <li class="footer__item">
-                                    <a class="footer__link" href="#">Terms & Condition</a>
-                                </li>
-                            </ul>
-                        </div>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">About us</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Return Policy</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Our Blog</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Contact Us</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Terms & Condition</a>
+                            </li>
+                        </ul>
                     </div>
 
                     <div class="footer__item">
                         <span class="footer__title">Account</span>
-                        <div class="footer__menu">
-                            <ul class="footer__list">
-                                <li class="footer__item">
-                                    <a class="footer__link" href="#">Your Account</a>
-                                </li>
-                                <li class="footer__item">
-                                    <a class="footer__link" href="#">Checkout</a>
-                                </li>
-                                <li class="footer__item">
-                                    <a class="footer__link" href="#">Login</a>
-                                </li>
-                                <li class="footer__item">
-                                    <a class="footer__link" href="#">Register</a>
-                                </li>
-                            </ul>
-                        </div>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Your Account</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Checkout</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Login</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Register</a>
+                            </li>
+                        </ul>
                     </div>
 
                     <div class="footer__item footer__item--form">
@@ -773,6 +800,7 @@
                     </ul>
                 </div>
             </div>
+        </div>
     </footer>
 
     <script src="js/main.min.js"></script>
