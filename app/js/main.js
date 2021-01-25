@@ -4,32 +4,24 @@ $(function () {
         arrows: false
     });
 
-    // $('.partners-slider__inner').slick({
-    //     arrows:false,
-    //     slidesToShow: 5,
-    //     slidesToScroll: 1,
-    //     autoplay: true,
-    //     autoplaySpeed: 1000,
-    // });
+    $('.partners-slider__inner').slick({
+        infinite: true,
+        arrows: false,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1000,
+    });
 
-    // $('.products__cards').mixitup({
-    //     selectors: {
-    //         filter: '.product__filter-btns'
-    //     }
-    // });
+    var containerEl1 = $('[data-ref="container-1"]');
+    var containerEl2 = $('[data-ref="container-2"]');
 
-    // $('.design__cards').mixitup({
-    //     selectors: {
-    //         filter: '.design__filter-btns'
-    //     }
-    // });
+    var config = {
+        controls: {
+            scope: 'local'
+        }
+    };
 
-    // var mixer1 = mixitup('.products__cards', {
-    //     selectors: {
-    //         filter: '.product__filter-btns'
-    //     }
-    // });
-
-    var mixer = mixitup('.products__cards');
-    //var mixer2 = mixitup('.design__cards');
+    var mixer1 = mixitup(containerEl1, config);
+    var mixer2 = mixitup(containerEl2, config);
 });
