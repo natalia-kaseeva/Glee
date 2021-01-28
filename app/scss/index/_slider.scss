@@ -22,7 +22,6 @@
         line-height: 1;
         text-transform: uppercase;
         margin-bottom: 20px;
-        //letter-spacing: 1.2px;
     }
 
     &__text {
@@ -31,7 +30,6 @@
         line-height: 1.7;
         color: #436372;
         margin-bottom: 38px;
-        letter-spacing: 0.1px;
     }
 
     &__img {
@@ -46,6 +44,7 @@
         color: #ffffff;
         padding: 15px 21px 16px 28px;
         background-color: $light-grey;
+        @extend %focus;
         @extend %animation-button-grey;
     }
 
@@ -60,34 +59,36 @@
         left: 50%;
         bottom: 46px;
         transform: translateX(-50%);
-    }
 
-    .slick-dots li:not(:last-child) {
-        margin-right: 10px;
-    }
-
-    .slick-dots button {
-        cursor: pointer;
-        background-color: #fde3cc;
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
-        font-size: 11px;
-        color: $dark-grey;
-        @extend %rubik-500;
-        padding: 0;
-        outline: transparent;
-        border: 1px solid transparent;
-        transition: all .5s;
-    }
-
-    .slick-dots button:focus {
-        border: 1px solid $orange;
-    }
-
-    .slick-dots button:hover {
-        background-color: $light-grey;
-        color: #fff;
+        & li:not(:last-child) {
+            margin-right: 10px;
+        }
+    
+        & button {
+            cursor: pointer;
+            background-color: #fde3cc;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            font-size: 11px;
+            color: $dark-grey;
+            @extend %rubik-500;
+            padding: 0;
+            outline: transparent;
+            border: 1px solid transparent;
+            transition: border .5s,
+                        background-color .5s,
+                        color .5s;
+        }
+    
+        & button:focus {
+            border: 1px solid $orange;
+        }
+    
+        & button:hover {
+            background-color: $light-grey;
+            color: #fff;
+        }
     }
 
     .slick-active button {

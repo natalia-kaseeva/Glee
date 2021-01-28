@@ -1,7 +1,7 @@
 .logo {
     border: 1px solid transparent;
     outline: transparent;
-    transition: all .5s;
+    transition: border .5s;
 
     &:focus {
         border: 1px solid $orange;

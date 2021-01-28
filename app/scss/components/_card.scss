@@ -59,7 +59,12 @@
         border-radius: 50%;
         box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
         fill: rgb(163, 187, 200);
+        @extend %focus; 
         @extend %animation-icon-link;
+
+        &:not(:last-child) {
+            margin-right: 13px;
+        }
 
         &:hover {
             background-color: $light-grey;
@@ -68,13 +73,5 @@
         &:hover path {
             fill: #fff;
         }
-    }
-
-    &__link path {
-        transition: fill 0.5s;
-    }
-
-    &__link:not(:last-child) {
-        margin-right: 13px;
-    }
+    }  
 }

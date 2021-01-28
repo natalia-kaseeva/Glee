@@ -27,16 +27,12 @@
     &__link {
         color: #436372;
         @extend %rubik-500;
+        @extend %focus;
         @extend %animation-menu;
         font-size: 15px;
         line-height: 1.25;
         padding-bottom: 1px;
-        transition: all .5s;
         position: relative;
-
-        &--active {
-            color: $accent-color;
-        }
     }
 }
 
@@ -46,6 +42,7 @@
     align-items: center;
 
     &__link {
+        @extend %focus;
         @extend %animation-icon-link;
         position: relative;
         width: 51px;
@@ -90,6 +87,7 @@
     }
 
     &__box-link {
+        @extend %focus;
         @extend %animation-icon-link;
         position: absolute;
         height: 100%;
@@ -167,7 +165,7 @@
         top: 14px;
         right: 21px;
         text-align: center;
-        line-height: 18px;
+        line-height: 16px;
 
         &--cart {
             right: 34px;

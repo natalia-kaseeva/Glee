@@ -12,10 +12,10 @@
         display: flex;
         justify-content: space-between;
         margin-right: 30px;
-    }
 
-    &__items:last-child {
-        margin-right: 0;
+        &:last-child {
+            margin-right: 0;
+        }
     }
 
     &__link {

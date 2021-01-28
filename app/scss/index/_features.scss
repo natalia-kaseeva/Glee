@@ -15,34 +15,37 @@
     }
 
     &__item {
-        position: relative;
-        padding-left: 75px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         height: 171px;
-        width: 33.33%;
+        width: 100%;
+
+        &+& {
+            border-left: 1px solid #e8e4df;
+        }
 
         &--clock {
-            border-right: 1px solid #e8e4df;
-            width: 28.5%;
+           max-width: 420px;
         }
 
         &--van {
-            border-right: 1px solid #e8e4df;
-            margin-left: auto;
-            width: 30%;
+            max-width: 604px;
         }
 
         &--payment {
-            margin-left: auto;
-            max-width: 286px;
+            max-width: 448px;
         }
+    }
 
+    &__content {
+        position: relative;
+        padding-left: 75px;
+        
         &::before {
             content: "";
             position: absolute;
-            top: 48px;
+            top: 8px;
             left: 0;
             width: 55px;
             height: 55px;
@@ -53,12 +56,21 @@
             background-image: url('../images/features/icon-clock.svg');
         }
 
-        &--van::before {
-            background-image: url('../images/features/icon-van.svg');
+        &--van {
+            margin: 0 auto;
+
+            &::before {
+                background-image: url('../images/features/icon-van.svg');
+            }
         }
 
-        &--payment::before {
-            background-image: url('../images/features/icon-payment.svg');
+        &--payment {
+            max-width: 300px;
+            margin-left: auto;
+
+            &::before {
+                background-image: url('../images/features/icon-payment.svg');
+            }
         }
     }
 

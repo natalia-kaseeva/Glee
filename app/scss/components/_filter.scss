@@ -17,6 +17,7 @@
         color: #aaaaaa;
         cursor: pointer;
         padding: 0;
+        @extend %focus;
         @extend %animation-menu;
     }
 

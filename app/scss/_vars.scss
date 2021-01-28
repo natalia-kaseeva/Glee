@@ -32,15 +32,19 @@ $orange: #f99036;
     font-weight: 500;
 }
 
-%animation-menu {
-    border: 1px solid transparent;
+%focus {
     outline: transparent;
-    transition: color .5s,
-        border .5s;
+    border: 1px solid transparent;
+    transition: border .5s;
 
     &:focus {
         border: 1px solid $orange;
     }
+}
+
+%animation-menu {
+    transition: color .5s,
+                border .5s;
 
     &:hover {
         color: $black;
@@ -52,15 +56,28 @@ $orange: #f99036;
     }
 }
 
-%animation-button-grey {
-    outline: transparent;
-    border: 1px solid transparent;
-    transition: border .5s,
-        background-color .5s;
+%animation-link {
+    transition: color .5s;
 
-    &:focus {
-        border: 1px solid $black;
+    &:hover {
+        color: $accent-color;
     }
+
+    &:active {
+        color: $orange;
+    }
+}
+
+%animation-icon-link {
+    transition: background-color .5s;
+
+    &:active {
+        background-color: $accent-color;
+    }
+}
+
+%animation-button-grey {
+    transition: background-color .5s;
 
     &:hover {
         background-color: $dark-blue;
@@ -72,14 +89,8 @@ $orange: #f99036;
 }
 
 %animation-button-light {
-    outline: transparent;
     transition: color .5s,
-        background-color .5s;
-    color: .5s;
-
-    &:focus {
-        border: 1px solid $orange;
-    }
+                background-color .5s;
 
     &:hover {
         background-color: $light-grey;
@@ -89,40 +100,6 @@ $orange: #f99036;
     &:active {
         background-color: $black;
         color: #fff;
-    }
-}
-
-%animation-link {
-    border: 1px solid transparent;
-    outline: transparent;
-    transition: color .5s,
-        border .5s;
-
-    &:focus {
-        border: 1px solid $orange;
-    }
-
-    &:hover {
-        color: $black;
-    }
-
-    &:active {
-        color: $orange;
-    }
-}
-
-%animation-icon-link {
-    border: 1px solid transparent;
-    outline: transparent;
-    transition: border .5s,
-        background-color .5s;
-
-    &:focus {
-        border: 1px solid $orange;
-    }
-
-    &:active {
-        background-color: $accent-color;
     }
 }
 
