@@ -1,11 +1,19 @@
 .footer {
     &__top {
         padding: 80px 0 63px;
+
+        @media (max-width: 992px) {
+            padding: 60px 0 40px;
+        }
     }
 
     &__logo {
         display: inline-block;
         margin-bottom: 25px;
+
+        @media (max-width: 576px) {
+            margin: 0 auto 20px auto;
+        }
     }
 
     &__items {
@@ -13,6 +21,10 @@
         font-size: 14px;
         line-height: 1.7;
         color: $grey;
+
+        @media (max-width: 992px) {
+            flex-wrap: wrap;
+        }
     }
 
     &__item {
@@ -21,12 +33,80 @@
         width: 100%;
         max-width: 299px;
 
+        &--contact {
+            @media (max-width: 1200px) {
+                max-width: 250px;
+            }
+
+            @media (max-width: 992px) {
+                order: 1;
+                max-width: 300px;
+                width: 33.33%;
+            }
+
+            @media (max-width: 768px) {
+                max-width: 250px;
+            }
+
+            @media (max-width: 576px) {
+                max-width: 400px;
+                width: 100%;
+                text-align: center;
+            }
+        }
+
         &--services {
             max-width: 300px;
+
+            @media (max-width: 1200px) {
+                max-width: 190px;
+            }
+
+            @media (max-width: 992px) {
+                order: 2;
+                max-width: 130px;
+                width: 33.33%;
+                margin: 0 auto;
+            }
+
+            @media (max-width: 576px) {
+                max-width: 300px;
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+        &--account {
+            @media (max-width: 1200px) {
+                max-width: 190px;
+            }
+
+            @media (max-width: 992px) {
+                order: 3;
+                margin-left: auto;
+                max-width: 130px;
+                width: 33.33%;
+            }
+
+            @media (max-width: 576px) {
+                max-width: 300px;
+                width: 100%;
+                text-align: center;
+            }
         }
 
         &--form {
             max-width: 270px;
+
+            @media (max-width: 992px) {
+                max-width: 800px;
+                order: 0;
+                margin: 0 auto 40px auto;
+            }
+        }
+
+        @media (max-width: 576px) {
+            margin: 0 auto;
         }
     }
 
@@ -38,6 +118,10 @@
 
     &__connection {
         max-width: 200px;
+
+        @media (max-width: 576px) {
+            margin: 0 auto;
+        }
     }
 
     &__title {
@@ -47,10 +131,30 @@
         color: #1f2044;
         @extend %dmsans-700;
         text-transform: uppercase;
+
+        &--form {
+            @media (max-width: 992px) {
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 576px) {
+            margin-bottom: 10px;
+        }
     }
 
     &__text {
         margin-bottom: 34px;
+
+        @media (max-width: 992px) {
+            margin-bottom: 15px;
+        }
+
+        &--form {
+            @media (max-width: 992px) {
+                text-align: center;
+            }
+        }
     }
 
     &__bottom {
@@ -61,10 +165,32 @@
         align-items: center;
         font-size: 14px;
         color: $grey;
+
+        @media (max-width: 992px) {
+            padding: 30px 0 30px;
+        }
+
+        @media (max-width: 768px) {
+            padding: 15px 0 15px;
+        }
+    }
+
+    &__copy {
+        @media (max-width: 768px) {
+            margin: 0 auto;
+        }
+
+        @media (max-width: 576px) {
+            text-align: center;
+        }
     }
 
     &__bottom-list {
         display: flex;
+
+        @media (max-width: 768px) {
+            display: none;
+        }
     }
 
     &__bottom-item {
@@ -104,6 +230,21 @@
 }
 
 .subscribe-form {
+
+    @media (max-width: 992px) {
+        max-width: 392px;
+        width: 100%;
+        margin: 0 auto
+    }
+
+    @media (max-width: 576px) {
+        max-width: 250px;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+
     &__field {
         max-width: 170px;
         width: 100%;
@@ -114,10 +255,22 @@
         @extend %focus;
         transition: background-color .5s;
 
+        @media (max-width: 992px) {
+            max-width: 265px;
+        }
+
+        @media (max-width: 992px) {
+            margin-bottom: 10px;
+        }
+
         &::placeholder {
             font-size: 12px;
             @extend %dmsans-400;
             color: #234969;
+
+            @media (max-width: 576px) {
+                text-align: center;
+            }
         }
 
         &:hover {
@@ -136,5 +289,14 @@
         margin-left: -4px;
         @extend %focus;
         @extend %animation-button-grey;
+
+        @media (max-width: 992px) {
+            padding: 0 30px 0 30px;
+        }
+
+        @media (max-width: 576px) {
+            width: 100%;
+            margin-left: 0;
+        }
     }
 }

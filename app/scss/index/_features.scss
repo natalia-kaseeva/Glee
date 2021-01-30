@@ -4,14 +4,29 @@
     }
 
     &__inner {
-        max-width: 1470px;
+        max-width: 1500px;
+        padding: 0 15px;
         margin: 0 auto;
+
+        @media (max-width: 768px) {
+            max-width: 500px;
+        }
     }
 
     &__items {
         min-height: 171px;
         display: flex;
         align-items: center;
+
+        @media (max-width: 992px) {
+            align-items: baseline;
+        }
+
+        @media (max-width: 768px) {
+            display: flex;
+            flex-direction: column;
+            padding: 20px 0 20px 0;
+        }
     }
 
     &__item {
@@ -23,6 +38,10 @@
 
         &+& {
             border-left: 1px solid #e8e4df;
+
+            @media (max-width: 992px) {
+                border: none;
+            }
         }
 
         &--clock {
@@ -36,11 +55,33 @@
         &--payment {
             max-width: 448px;
         }
+
+        @media (max-width: 768px) {
+            //max-width: 400px;
+            //margin: 0 auto 20px auto;
+            height: 100%;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+       
     }
 
     &__content {
         position: relative;
         padding-left: 75px;
+
+        @media (max-width: 992px) {
+            padding-left: 5px;
+            padding-top: 55px;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            padding-left: 75px;
+            padding-top: 0px;
+            //margin: 0 auto;
+            text-align: left;
+        }
         
         &::before {
             content: "";
@@ -50,6 +91,17 @@
             width: 55px;
             height: 55px;
             background-repeat: no-repeat;
+
+            @media (max-width: 992px) {
+                top: 0px;
+                left: 100px;
+            }
+
+            @media (max-width: 768px) {
+                top: 7px;
+                left: 0;
+            }
+            
         }
 
         &--clock::before {
@@ -58,15 +110,35 @@
 
         &--van {
             margin: 0 auto;
+            @media (max-width: 768px) {
+                margin: 0;
+            }
 
             &::before {
                 background-image: url('../images/features/icon-van.svg');
+
+                @media (max-width: 992px) {
+                    top: 12px;
+                    left: 75px;
+                }
+
+                @media (max-width: 768px) {
+                    left: -2px;
+                }
+
+                @media (max-width: 576px) {
+                    left: -5px;
+                }
             }
         }
 
         &--payment {
             max-width: 300px;
             margin-left: auto;
+
+            @media (max-width: 768px) {
+                margin: 0;
+            }
 
             &::before {
                 background-image: url('../images/features/icon-payment.svg');
@@ -78,6 +150,10 @@
         @extend %dmsans-700;
         font-size: 18px;
         color: #414141;
+
+        @media (max-width: 992px) {
+            font-size: 16px;
+        }
     }
 
     &__text {
@@ -86,6 +162,14 @@
 
         &--small {
             max-width: 205px;
+
+            @media (max-width: 992px) {
+                max-width: 220px;
+            }
+        }
+
+        @media (max-width: 992px) {
+            font-size: 14px;
         }
     }
 }

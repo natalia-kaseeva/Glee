@@ -2,6 +2,14 @@
     &__inner {
         padding: 50px 0 0;
         margin-bottom: 144px;
+
+        @media (max-width: 992px) {
+            margin-bottom: 60px;
+        }
+
+        @media (max-width: 768px) {
+            margin-bottom: 20px;
+        }
     }
 
     &__title {
@@ -9,19 +17,42 @@
     }
 
     &__cards {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
+        // display: flex;
+        // justify-content: space-between;
+        // flex-wrap: wrap;
+
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        column-gap: 30px;
+        row-gap: 35px;
+
+        @media (max-width: 992px) {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+        }
     }
 
     ul.products__filter-btns {
         margin-bottom: 70px;
+
+        @media (max-width: 992px) {
+            margin-bottom: 50px;
+        }
+
+        @media (max-width: 768px) {
+            margin-bottom: 20px;
+        }
     }
 }
 
 .special-product {
     &__items {
         display: flex;
+
+        @media (max-width: 768px) {
+            display: none;
+        }
     }
 
     &__item {
@@ -34,18 +65,55 @@
         &:last-child {
             margin-right: 0;
         }
+
+        @media (max-width: 1200px) {
+            min-height: 350px;
+        }
+
+        @media (max-width: 992px) {
+            min-height: 300px;
+            margin-right: 10px;
+        }
     }
 
     &__img {
         position: absolute;
         top: -96px;
         left: 137px;
+
+        @media (max-width: 1500px) {
+            left: 10px;
+        }
+
+        @media (max-width: 1200px) {
+            max-width: 150px;
+            left: 5px;
+            top: -84px;
+        }
+
+        @media (max-width: 1200px) {
+            display: none;
+        }
     }
 
     &__content {
         margin-left: 388px;
         margin-top: 98px;
         max-width: 348px;
+
+        @media (max-width: 1500px) {
+            margin-left: 255px;
+        }
+
+        @media (max-width: 1200px) {
+            margin-left: 170px;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 992px) {
+            margin-left: 10px;
+            margin-top: 50px;
+        }
     }
 
     &__title {
@@ -53,6 +121,14 @@
         font-size: 26px;
         line-height: 1.2;
         margin-bottom: 18px;
+
+        @media (max-width: 1200px) {
+            font-size: 24px;
+        }
+
+        @media (max-width: 992px) {
+            font-size: 22px;
+        }
     }
 
     &__text {

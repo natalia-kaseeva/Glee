@@ -1,7 +1,17 @@
 .partners-slider {
     padding: 283px 0 59px;
-    margin-top: -170px;
+    margin-top: -192px;
     background-color: #fef7f0;
+
+    @media (max-width: 1200px) {
+        padding: 250px 0 40px;
+        margin-top: -201px;
+    }
+
+    @media (max-width: 768px) {
+        padding: 230px 0 40px;
+        margin-top: -175px;
+    }
 
     ul.partners-slider__inner {
         max-width: 1045px;
@@ -9,5 +19,18 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @media (max-width: 1200px) {
+            max-width: 885px;
+        }
+
+        @media (max-width: 992px) {
+            max-width: 600px;
+        }
+
+        @media (max-width: 768px) {
+            max-width: 360px;
+        }
+        
     }
 }
