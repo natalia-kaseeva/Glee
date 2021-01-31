@@ -103,10 +103,18 @@ $orange: #f99036;
     }
 }
 
-@function max($numbers...) {
-    @return m#{a}x(#{$numbers});
-}
+// @function max($numbers...) {
+//     @return m#{a}x(#{$numbers});
+// }
 
-@function min($numbers...) {
-    @return m#{i}n(#{$numbers});
-}
+// @function min($numbers...) {
+//     @return m#{i}n(#{$numbers});
+// }
+
+// @function max(${1:$}numbers...) {
+//     @return m#{a}x(#{${1:$}numbers});
+// }
+
+// @function min(${1:$}numbers...) {
+//     @return m#{i}n(#{${1:$}numbers});
+// }

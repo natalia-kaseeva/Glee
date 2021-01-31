@@ -19,9 +19,15 @@
         @media (max-width: 768px) {
             grid-gap: 10px;
         }
+
+        @media (max-width: 576px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
-    ul.design__filter-btns {
+    &__filter {
         margin-bottom: 74px;
 
         @media (max-width: 992px) {

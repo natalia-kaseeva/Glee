@@ -1,12 +1,61 @@
-.filter-btns {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.filter {
+    position: relative;
+
+    &__button {
+        display: none;
+        background-color: transparent;
+        border: none;
+        @extend %dmsans-700;
+        font-size: 16px;
+        color: $black;
+        cursor: pointer;
+        padding: 0;
+        position: relative;
+
+        &::after {
+            content: '';
+            width: 7px;
+            height: 17px;
+            position: absolute;
+            top: 9px;
+            right: -18px;
+            background-image: url('../../images/news/icon-news.svg');
+            background-repeat: no-repeat;
+        }
+
+        @media (max-width: 576px) {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+
+    &__menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media (max-width: 576px) {
+            display: none;
+
+            &--active {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+            }
+        }
+    }
 
     &__item {
         margin-right: 26px;
+
         &:last-child {
             margin-right: 0;
+        }
+
+        @media (max-width: 576px) {
+            margin: 0;
+            display: block;
         }
     }
 
@@ -19,6 +68,11 @@
         padding: 0;
         @extend %focus;
         @extend %animation-menu;
+
+        @media (max-width: 576px) {
+            display: block;
+            padding: 10px 0;
+        }
     }
 
     .mixitup-control-active {

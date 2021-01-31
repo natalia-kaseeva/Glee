@@ -22,8 +22,16 @@ body {
     margin: 0 auto;
     padding: 0 15px;
 
+    @media (max-width: 1800px) {
+        padding: 0;
+    }
+
     &--small {
         max-width: 1200px;
+
+        @media (max-width: 1800px) {
+            padding: 0 15px;
+        }
     }
 }
 

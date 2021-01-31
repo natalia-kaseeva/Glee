@@ -1,7 +1,7 @@
 .products {
     &__inner {
         padding: 50px 0 0;
-        margin-bottom: 144px;
+        margin-bottom: 180px;
 
         @media (max-width: 992px) {
             margin-bottom: 60px;
@@ -17,9 +17,9 @@
     }
 
     &__cards {
-        // display: flex;
-        // justify-content: space-between;
-        // flex-wrap: wrap;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
 
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -31,9 +31,13 @@
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(4, 1fr);
         }
+
+        @media (max-width:576px) {
+            display: block;
+        }
     }
 
-    ul.products__filter-btns {
+    &__filter {
         margin-bottom: 70px;
 
         @media (max-width: 992px) {

@@ -32,7 +32,7 @@
         flex-direction: column;
         width: 100%;
         max-width: 299px;
-
+        
         &--contact {
             @media (max-width: 1200px) {
                 max-width: 250px;
@@ -40,18 +40,6 @@
 
             @media (max-width: 992px) {
                 order: 1;
-                max-width: 300px;
-                width: 33.33%;
-            }
-
-            @media (max-width: 768px) {
-                max-width: 250px;
-            }
-
-            @media (max-width: 576px) {
-                max-width: 400px;
-                width: 100%;
-                text-align: center;
             }
         }
 
@@ -64,15 +52,7 @@
 
             @media (max-width: 992px) {
                 order: 2;
-                max-width: 130px;
-                width: 33.33%;
-                margin: 0 auto;
-            }
-
-            @media (max-width: 576px) {
-                max-width: 300px;
-                width: 100%;
-                text-align: center;
+                align-items: center;
             }
         }
 
@@ -83,16 +63,18 @@
 
             @media (max-width: 992px) {
                 order: 3;
-                margin-left: auto;
-                max-width: 130px;
-                width: 33.33%;
+                align-items: center;
             }
+        }
 
-            @media (max-width: 576px) {
-                max-width: 300px;
-                width: 100%;
-                text-align: center;
-            }
+        @media (max-width: 992px) {
+            max-width: 33.33%;
+            margin: 0 auto;
+        }
+
+        @media (max-width: 576px) {
+            max-width: 100%;
+            text-align: center;
         }
 
         &--form {
@@ -103,10 +85,6 @@
                 order: 0;
                 margin: 0 auto 40px auto;
             }
-        }
-
-        @media (max-width: 576px) {
-            margin: 0 auto;
         }
     }
 
