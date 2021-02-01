@@ -4,13 +4,6 @@ $(function () {
     arrows: false
   });
 
-  // $('.products__cards').slick({
-  //   dots: true,
-  //   arrows: false,
-  //   slidesToShow: 2,
-  //   slidesToScroll: 1
-  // });
-
   $('.partners-slider__inner').slick({
     infinite: true,
     arrows: false,
