@@ -8,7 +8,7 @@
         }
 
         @media (max-width: 768px) {
-            margin-bottom: 20px;
+            margin-bottom: 90px;
         }
     }
 
@@ -55,6 +55,10 @@
         display: flex;
 
         @media (max-width: 768px) {
+            display: block;
+        }
+
+        @media (max-width: 576px) {
             display: none;
         }
     }
@@ -65,58 +69,63 @@
         min-height: 390px;
         position: relative;
         background-color: #feefe2;
+        display: flex;
 
         &:last-child {
             margin-right: 0;
         }
 
         @media (max-width: 1200px) {
-            min-height: 350px;
+            margin-right: 10px;
         }
 
         @media (max-width: 992px) {
-            min-height: 300px;
-            margin-right: 10px;
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            width: 100%;
+            display: flex;
+            margin-bottom: 30px;
+            min-height: 200px;
+            padding: 10px 0 10px 0;
         }
     }
 
     &__img {
-        position: absolute;
-        top: -96px;
-        left: 137px;
+        max-height: 405px;
+        max-width: 233px;
+        object-fit: contain;
+        margin-left: 134px;
+        margin-top: -101px;
 
         @media (max-width: 1500px) {
-            left: 10px;
+            margin-left: 30px;
         }
 
         @media (max-width: 1200px) {
             max-width: 150px;
-            left: 5px;
-            top: -84px;
+            margin-left: 15px;
         }
 
-        @media (max-width: 1200px) {
-            display: none;
+        @media (max-width: 992px) {
+            max-width: 120px;
+            margin: -30px auto 20px auto;
         }
     }
 
     &__content {
-        margin-left: 388px;
+        margin-left: 16px;
         margin-top: 98px;
         max-width: 348px;
 
         @media (max-width: 1500px) {
-            margin-left: 255px;
-        }
-
-        @media (max-width: 1200px) {
-            margin-left: 170px;
-            margin-top: 50px;
+            margin-right: 10px;
         }
 
         @media (max-width: 992px) {
-            margin-left: 10px;
-            margin-top: 50px;
+            margin: 20px auto 20px auto;
+            text-align: center;
         }
     }
 
@@ -137,6 +146,10 @@
 
     &__text {
         margin-bottom: 27px;
+
+        @media (max-width: 768px) {
+            margin-bottom: 10px;
+        }
     }
 
     &__link {
@@ -157,6 +170,10 @@
     
         &:hover path {
             fill: #fff;
+        }
+
+        @media (max-width: 768px) {
+            padding: 10px 20px 10px 20px;
         }
     }
 

@@ -1,28 +1,18 @@
 .slider {
     &__inner {
         background-color: $accent-color;
-        min-height: 822px;
         position: relative;
-        font-family: 'Montserrat', sans-serif;
-
-        @media (max-width: 1800px) {
-            min-height: 100vh;
-        }
-
-        @media (max-width: 1200px) {
-            min-height: 100vh;
-        }
     }
 
     &__item {
         position: relative;
-        height: 822px;
+        min-height: 822px;
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
 
         @media (max-width: 1800px) {
-            height: 100vh;
+            min-height: 100vh;
         }
 
         @media (max-width: 992px) {

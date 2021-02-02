@@ -1,5 +1,6 @@
 .partners-slider {
     padding: 283px 0 59px;
+    min-height: 437px;
     margin-top: -168px;
     background-color: #fef7f0;
 
@@ -11,7 +12,7 @@
         align-items: center;
 
         @media (max-width: 1200px) {
-            max-width: 885px;
+            max-width: 900px;
         }
 
         @media (max-width: 992px) {
@@ -23,13 +24,17 @@
         }
     }
 
+    &__img {
+        max-width: 200px;
+        max-height: 100px;
+    }
+
     @media (max-width: 1200px) {
-        padding: 250px 0 40px;
-        margin-top: -201px;
+        margin-top: -178px;
     }
 
     @media (max-width: 768px) {
-        padding: 230px 0 40px;
+        padding: 240px 0 40px;
         margin-top: -175px;
     }
 
