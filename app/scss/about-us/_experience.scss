@@ -1,0 +1,129 @@
+.experience {
+    padding: 120px 0 120px;
+
+    &__img {
+        margin-right: 44px;
+    }
+   
+    &__inner {
+        display: flex;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+
+    &__number {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    &__years {
+        @extend %rubik-700;
+        font-size: 140px;
+        line-height: 1;
+        color: $light-grey;
+        margin-right: 21px;
+    }
+
+    &__text {
+        display: block;
+        max-width: 100px;
+        font-size: 16px;
+        color: $dark-grey;
+        margin-top: 16px;
+    }
+
+    &__title {
+        @extend %dmsans-700;
+        font-size: 36px;
+        line-height: 1.1;
+        color: $dark-grey;
+        margin-bottom: 40px;
+    }
+
+    &__desc {
+        font-size: 16px;
+        color: $dark-grey;
+        position: relative;
+        margin-bottom: 100px;
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 500px;
+            height: 2px;
+            background-image: url('../../images/experience/line.jpg');
+            bottom: -60px;
+            left: 0;
+        }
+
+    }
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        //width: 33.33%;
+        max-width: 168px;
+        width: 100%;
+        position: relative;
+        padding-left: 52px;
+        padding: 9px 0 9px 52px;
+        border-right: 1px solid #e6eaf0;
+
+        &:last-child {
+            border-right: none;
+        }
+
+        &::before {
+            content:'';
+            position: absolute;
+            width: 37px;
+            height: 38px;
+            background-image: url('../../images/experience/icon-1.svg');
+            background-repeat: no-repeat;
+            top: 18px;
+            left: -4px;
+        }
+
+        &--revenue {
+            &::before {
+                width: 44px;
+                height: 40px;
+                background-image: url('../../images/experience/icon-2.svg');
+            }
+        }
+
+        &--awards {
+            &::before {
+                width: 42px;
+                height: 41px;
+                background-image: url('../../images/experience/icon-3.svg');
+            }
+        }
+
+
+    }
+
+    &__item-number {
+        display: block;
+        @extend %dmsans-700;
+        color: $dark-grey;
+        font-size: 36px;
+        line-height: 1;
+    }
+
+    &__item-text {
+        @extend %dmsans-700;
+        color: #4c4c4c;
+        font-size: 16px;
+    }
+
+}

@@ -1,0 +1,68 @@
+.result {
+    min-height: 320px;
+    background-color: $accent-color;
+    display: flex;
+    align-items: center;
+
+    &__items {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        justify-content: center;
+        position: relative;
+        margin-right: 120px;
+        padding-top: 75px;
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 79px;
+            height: 64px;
+            background-image: url('../../images/results/icon-rate.svg');
+            background-repeat: no-repeat;
+            top: 0px;
+            left: 51px;
+
+        }
+
+        &--van {
+            &::before {
+                background-image: url('../../images/results/icon-van.svg');
+            }
+        }
+
+        &--clock {
+            &::before {
+                background-image: url('../../images/results/icon-clock.svg');
+            }
+        }
+
+        &--brand {
+            &::before {
+                background-image: url('../../images/results/icon-brand.svg');
+            }
+        }
+    }
+
+    &__title {
+        display: block;
+        @extend %dmsans-700;
+        font-size: 36px;
+        line-height: 1.1;
+        color: $dark-grey;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    &__text {
+        @extend %dmsans-700;
+        font-size: 18px;
+        line-height: 1.8;
+        color: $dark-grey;
+    }
+}

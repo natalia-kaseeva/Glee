@@ -1,0 +1,30 @@
+.breadcrumbs {
+    &__list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__item {
+        font-size: 14px;
+        line-height: 1.7;
+        color: #737980;
+        margin-right: 6px;
+
+        &::after {
+            content: '/';
+            font-size: 14px;
+        }
+
+        &:last-child {
+            margin-right: 0;
+            &::after {
+                display: none;
+            }
+        }
+    }
+
+    &__link {
+        color: inherit;
+    }
+}

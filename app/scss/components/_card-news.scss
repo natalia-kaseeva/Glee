@@ -49,24 +49,6 @@
         cursor: pointer;
         @extend %focus;
         @extend %animation-button-grey;
-
-        // @media (max-width: 1200px) {
-        //     //top: 195px;
-        //     top: 54%;
-        // }
-
-        // @media (max-width: 992px) {
-        //     top: 145px;
-        // }
-
-        // @media (max-width: 768px) {
-        //     top: 255px;
-        // }
-
-        // @media (max-width: 576px) {
-        //     top: 10px;
-        //     left:10px;
-        // }
     }
 
     &__content {

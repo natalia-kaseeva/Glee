@@ -4,18 +4,24 @@
 @import 'libs';
 @import 'global';
 
-
 @import 'components/header';
 @import 'components/logo';
 @import 'components/footer';
-@import 'components/_card';
+@import 'components/card-product';
 @import 'components/card-small';
 @import 'components/card-news';
-@import 'components/_filter';
-@import 'components/_video';
-@import 'index/slider';
+@import 'components/filter-product';
+@import 'components/video';
+@import 'components/breadcrumbs';
+
+@import 'index/products-slider';
 @import 'index/features';
 @import 'index/products';
 @import 'index/design';
 @import 'index/news';
 @import 'index/partners';
+
+@import 'about-us/top';
+@import 'about-us/experience';
+@import 'about-us/result';
+@import 'about-us/team';

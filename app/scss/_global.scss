@@ -5,7 +5,7 @@ body {
 
 body {
     @extend %rubik-400;
-    color: #243f4d;
+    color: $dark-grey;
     font-size: 16px;
     line-height: 1.9;
     display: flex;

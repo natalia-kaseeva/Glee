@@ -1,0 +1,125 @@
+.team {
+    padding: 120px 0 95px;
+
+    &__inner {
+        display: flex;
+        //align-items: center;
+    }
+
+    &__desc {
+        max-width: 309px;
+        margin-right: 100px;
+    }
+
+    &__title {
+        color: $dark-grey;
+        margin-bottom: 30px;
+    }
+
+    &__text {
+        margin-bottom: 30px;
+    }
+
+    &__link {
+        @extend %poppins-600;
+        padding: 11px 24px 11px 15px;
+        border-radius: 5px;
+    }
+
+    &__arrow {
+        margin-left: 16px;
+    }
+
+    &__members {
+        // display: flex;
+        // flex-wrap: wrap;
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        column-gap: 30px;
+        row-gap: 100px;
+    }
+
+    &__member {
+        position: relative;
+        // margin-right: 30px;
+        // &:last-child {
+        //     margin-right: 0;
+        // }
+    }
+
+    &__img {
+        max-width: 370px;
+        max-height: 320px;
+    }
+
+    &__content {
+        position: absolute;
+        min-height: 110px;
+        max-width: 324px;
+        width: 100%;
+        padding: 0 20px;
+        background-color: #ffffff;
+        box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        //z-index: 10;
+        margin-top: -48px;
+    }
+
+    &__name {
+        display: block;
+        @extend %dmsans-700;
+        color: #436372;
+        font-size: 22px;
+        line-height: 1.2;
+        margin-bottom: 10px;
+    }
+
+    &__position {
+        color: #565872;
+    }
+
+    &__social {
+        display: flex;
+    }
+
+    &__item {
+        margin-right: 5px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__social-link {
+        display: block;
+        width: 41px;
+        height: 41px;
+        background-color: #f6f6f6;
+        border-radius: 50%;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 18px;
+            height: 18px;
+            top: 11px;
+            left: 12px;
+            background-image: url('../../images/instagram-icon.svg');
+            background-repeat: no-repeat;
+        }
+
+        &--google {
+            &::before {
+                width: 23px;
+                height: 15px;
+                background-image: url('../../images/google-icon.svg');
+                top: 13px;
+            }
+        }
+    }
+      
+}
