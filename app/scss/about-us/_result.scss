@@ -4,18 +4,61 @@
     display: flex;
     align-items: center;
 
+    @media (max-width: 1200px) {
+        min-height: 244px;
+    }
+
+    @media (max-width: 768px) {
+        min-height: 355px;
+    }
+
     &__items {
         display: flex;
         justify-content: space-between;
+        max-width: 1086px;
+        width: 100%;
+        margin: 0 auto;
+
+        @media (max-width: 1200px) {
+            max-width: 880px;
+            text-align: center;
+        }
+
+        @media (max-width: 992px) {
+            max-width: 700px;
+        }
+
+        @media (max-width: 768px) {
+            max-width: 400px;
+            flex-wrap: wrap;
+        }
     }
 
     &__item {
         justify-content: center;
         position: relative;
-        margin-right: 120px;
-        padding-top: 75px;
-        &:last-child {
+        padding-top: 94px;
+
+        @media (max-width: 992px) {
+            margin-right: 20px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        @media (max-width: 768px) {
             margin-right: 0;
+        }
+
+        @media (max-width: 576px) {
+            padding: 10px 15px 30px 129px;
+            border-bottom: 1px solid $light-grey;
+            width: 100%;
+
+            &:last-child {
+                border-bottom: none;
+            }
         }
 
         &::before {
@@ -25,14 +68,33 @@
             height: 64px;
             background-image: url('../../images/results/icon-rate.svg');
             background-repeat: no-repeat;
-            top: 0px;
+            top: 19px;
             left: 51px;
 
+            @media (max-width: 1200px) {
+                left: 50px;
+            }
+
+            @media (max-width: 992px) {
+                left: 40px;
+            }
+
+            @media (max-width: 576px) {
+                top: 13px;
+            }
         }
 
         &--van {
             &::before {
                 background-image: url('../../images/results/icon-van.svg');
+
+                @media (max-width: 992px) {
+                    top: 29px;
+                }
+
+                @media (max-width: 576px) {
+                    top: 25px;
+                }
             }
         }
 
@@ -56,7 +118,15 @@
         line-height: 1.1;
         color: $dark-grey;
         text-align: center;
-        margin-bottom: 15px;
+        margin-bottom: 13px;
+
+        @media (max-width: 992px) {
+            font-size: 32px;
+        }
+
+        @media (max-width: 992px) {
+            font-size: 24px;
+        }
     }
 
     &__text {
@@ -64,5 +134,9 @@
         font-size: 18px;
         line-height: 1.8;
         color: $dark-grey;
+
+        @media (max-width: 992px) {
+            font-size: 15px;
+        }
     }
 }
