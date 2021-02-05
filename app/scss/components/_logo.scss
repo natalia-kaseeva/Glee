@@ -1,9 +1,9 @@
 .logo {
-    border: 1px solid transparent;
-    outline: transparent;
+    @extend %focus;
     transition: border .5s;
-
-    &:focus {
-        border: 1px solid $orange;
+    flex: 0 0 139px;
+    
+    & img {
+        max-width: 100%;
     }
 }

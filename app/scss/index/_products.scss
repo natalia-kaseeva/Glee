@@ -26,6 +26,7 @@
         grid-template-rows: repeat(2, 1fr);
         column-gap: 30px;
         row-gap: 35px;
+        height: auto;
 
         @media (max-width: 992px) {
             grid-template-columns: repeat(2, 1fr);
@@ -160,7 +161,7 @@
         font-size: 15px;
         @extend %rubik-500;
         color: #436372;
-        @extend %focus;
+        //@extend %focus;
         @extend %animation-button-light;
 
         & path {

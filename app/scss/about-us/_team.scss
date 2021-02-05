@@ -53,6 +53,7 @@
 
     &__link {
         @extend %poppins-600;
+        @extend %animation-button-grey;
         padding: 11px 24px 11px 15px;
         border-radius: 5px;
 
@@ -182,6 +183,7 @@
         background-color: #f6f6f6;
         border-radius: 50%;
         position: relative;
+        @extend %animation-icon-link;
 
         &::before {
             content: '';
@@ -201,6 +203,10 @@
                 background-image: url('../../images/google-icon.svg');
                 top: 13px;
             }
+        }
+
+        &:hover {
+            background-color: #c9c3c3;
         }
     }
 }

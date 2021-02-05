@@ -28,6 +28,7 @@
         right: 0;
         left: 0;
         bottom: 0;
+        transition: border .5s;
 
         & path {
             transition: fill 0.5s;

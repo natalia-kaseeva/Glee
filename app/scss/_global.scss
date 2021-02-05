@@ -11,6 +11,12 @@ body {
     display: flex;
     flex-direction: column;
     background-color: #fff;
+
+    @media (max-width: 1200px) {
+        &.lock {
+            overflow: hidden;
+        }
+    }
 }
 
 .main {
