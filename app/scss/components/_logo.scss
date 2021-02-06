@@ -1,7 +1,6 @@
 .logo {
     @extend %focus;
     transition: border .5s;
-    flex: 0 0 139px;
     
     & img {
         max-width: 100%;

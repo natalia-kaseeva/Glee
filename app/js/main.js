@@ -35,14 +35,10 @@ $(function () {
     ]
   });
 
-  // $('.menu__btn, .menu a').on('click', function () {
-  //   $('.header__inner').toggleClass('header__inner--active');
-  // });
-
   $('.menu__burger, .menu a').on('click', function () {
-     $('.menu__burger, .menu__list').toggleClass('active');
-     $('body').toggleClass('lock');
-  });
+    $('.menu__burger, .menu').toggleClass('active');
+    $('body').toggleClass('lock');
+ });
 
   $('.filter__button, .filter__menu button').on('click', function () {
     $('ul.filter__menu').toggleClass('filter__menu--active');

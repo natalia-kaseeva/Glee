@@ -38,17 +38,18 @@
                 max-width: 33%;
             }
         }
-        
+
         &--services {
             max-width: 300px;
         }
 
-        &--services, &--account {
+        &--services,
+        &--account {
             @media (max-width: 1200px) {
                 max-width: 21%;
             }
         }
-        
+
         @media (max-width: 992px) {
             max-width: 33.33%;
             margin: 0 auto;
@@ -60,7 +61,7 @@
             text-align: center;
         }
 
-        
+
         &--form {
             max-width: 270px;
 
@@ -158,7 +159,6 @@
     &__link,
     &__bottom-link {
         color: $grey;
-        //@extend %focus;
         @extend %animation-menu;
     }
 }
@@ -171,7 +171,6 @@
         color: $grey;
         margin-bottom: 9px;
         cursor: pointer;
-        //@extend %focus;
         @extend %animation-link;
 
         &:last-child {
@@ -230,7 +229,7 @@
     }
 
     &__btn {
-        height: 41px;   
+        height: 41px;
         background-color: $light-grey;
         padding: 0 17px 0 16px;
         font-size: 14px;

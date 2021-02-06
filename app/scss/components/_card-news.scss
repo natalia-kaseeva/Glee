@@ -21,7 +21,7 @@
         max-width: 400px;
         margin: 0 auto 30px auto;
 
-        &:last-child{
+        &:last-child {
             margin-bottom: 0;
         }
     }
@@ -46,7 +46,6 @@
         top: 231px;
         left: 30px;
         cursor: pointer;
-        //@extend %focus;
         @extend %animation-button-grey;
     }
 
