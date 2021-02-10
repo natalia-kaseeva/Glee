@@ -1,0 +1,40 @@
+.card-recent {
+    display: flex;
+    margin-bottom: 22px;
+    
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    &__img-wrapper {
+        width: 71px;
+        height: 71px;
+        border: 2px solid #f2f2f2;
+        margin-right: 18px;
+        position: relative;
+    }
+
+    &__img {
+        max-width: 71px;
+        max-height: 71px;
+        object-fit: cover;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        color: #333333;
+    }
+
+    &__title {
+        font-size: 14px;
+    }
+
+    &__price {
+        font-size: 15px;
+    }
+}

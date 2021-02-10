@@ -35,10 +35,24 @@ $(function () {
     ]
   });
 
+  $('.filter-price__input').ionRangeSlider({
+    type: "double",
+    prefix: "$",
+    step: 1,
+    onStart: function (data) {
+        $('.filter-price__from').text(data.from);
+        $('.filter-price__to').text(data.to);
+    }, 
+    onChange: function (data) {
+        $('.filter-price__from').text(data.from);
+        $('.filter-price__to').text(data.to);
+    }
+  });
+
   $('.menu__burger, .menu a').on('click', function () {
     $('.menu__burger, .menu').toggleClass('active');
     $('body').toggleClass('lock');
- });
+  });
 
   $('.filter__button, .filter__menu button').on('click', function () {
     $('ul.filter__menu').toggleClass('filter__menu--active');

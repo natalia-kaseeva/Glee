@@ -1,0 +1,37 @@
+.shop {
+    padding: 109px 0 120px;
+
+    &__inner {
+        display: flex;
+    }
+
+    &__sidebar {
+        max-width: 270px;
+        width: 100%;
+        margin-right: 30px;
+    }
+
+    &__sidebar-item {
+        margin-bottom: 50px;
+    }
+
+    &__sidebar-title {
+        @extend %dmsans-700;
+        display: block;
+        font-size: 18px;
+        text-transform: uppercase;
+        position: relative;
+        margin-bottom: 18px;
+
+        &::after {
+            content:'';
+            position: absolute;
+            width: 39px;
+            height: 2px;
+            background-image: url('../../images/shop/title-line.svg');
+            left: 111px;
+            top: 15px;
+        }
+    }
+}
+

@@ -13,6 +13,9 @@
 @import 'components/filter-product';
 @import 'components/video';
 @import 'components/breadcrumbs';
+@import 'components/filter-shop';
+@import 'components/filter-price';
+@import 'components/card-recent';
 
 @import 'index/products-slider';
 @import 'index/features';
@@ -25,3 +28,5 @@
 @import 'about-us/experience';
 @import 'about-us/result';
 @import 'about-us/team';
+
+@import 'shop/_shop';

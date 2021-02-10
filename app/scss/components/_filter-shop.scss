@@ -1,0 +1,39 @@
+.filter-shop {
+    
+    &__label {
+        cursor: pointer;
+        display: block;
+        margin-bottom: 1px;
+    }
+
+    &__input {
+        @extend %checkbox-hidden;
+
+        &:checked + .filter-shop__checkbox {
+            background-color: #edf1f4;
+            border-radius: 5px;
+        }
+    }
+
+    &__checkbox {
+        display: flex;
+        justify-content: space-between;
+        padding: 6px 24px 6px 15px;
+        
+    }
+
+    &__icon {
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 6px;
+            height: 10px;
+            background-image: url('../../images/shop/filter-icon.svg');
+            background-repeat: no-repeat;
+            top: 10px;
+            left: -4px;
+        }
+    }
+}

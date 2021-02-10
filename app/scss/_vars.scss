@@ -47,6 +47,14 @@ $orange: #f99036;
     font-weight: 600;
 }
 
+%checkbox-hidden {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    position: absolute;
+}
+
 %focus {
     outline: transparent;
     border: 1px solid transparent;
