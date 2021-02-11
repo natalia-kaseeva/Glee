@@ -58,6 +58,14 @@ $(function () {
     $('ul.filter__menu').toggleClass('filter__menu--active');
   });
 
+  $('.card-recent__star').rateYo({
+    starWidth: "10px",
+    spacing: "8px",
+    normalFill: "#d6d6d6",
+    ratedFill: "#ffcc00",
+    readOnly: true
+  });
+
   var containerEl1 = $('[data-ref="container-1"]');
   var containerEl2 = $('[data-ref="container-2"]');
 
