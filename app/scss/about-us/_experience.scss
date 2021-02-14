@@ -13,6 +13,7 @@
         margin-right: 49px;
         max-width: 570px;
         max-height: 676px;
+        object-fit: cover;
 
         @media (max-width: 1200px) {
             max-width: 372px;
@@ -80,7 +81,7 @@
             position: absolute;
             width: 500px;
             height: 2px;
-            background-image: url('../../images/experience/line.jpg');
+            background-image: url('../images/experience/line.jpg');
             bottom: -60px;
             left: 0;
 
@@ -124,7 +125,7 @@
             position: absolute;
             width: 37px;
             height: 38px;
-            background-image: url('../../images/experience/icon-1.svg');
+            background-image: url('../images/experience/icon-1.svg');
             background-repeat: no-repeat;
             top: 18px;
             left: -4px;
@@ -139,7 +140,7 @@
             &::before {
                 width: 44px;
                 height: 40px;
-                background-image: url('../../images/experience/icon-2.svg');
+                background-image: url('../images/experience/icon-2.svg');
             }
         }
 
@@ -147,7 +148,7 @@
             &::before {
                 width: 42px;
                 height: 41px;
-                background-image: url('../../images/experience/icon-3.svg');
+                background-image: url('../images/experience/icon-3.svg');
             }
         }
 

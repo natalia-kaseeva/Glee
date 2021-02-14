@@ -8,6 +8,101 @@
     flex-direction: column;
     position: relative;
 
+    .card-product__star,
+    .card-product__price-list,
+    .card-product__desc,
+    .card-product__btn {
+        display: none;
+    }
+
+    &.card-product--list {
+        min-width: 100%;
+        flex-direction: row;
+        box-shadow: none;
+        background-color: #fff;
+        padding: 0;
+        margin-bottom: 9px;
+
+        .card-product__inner {
+            max-width: 450px;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+
+        .card-product__img-wrapper {
+            max-width: 370px;
+            width: 100%;
+            min-height: 500px;
+            border: 2px solid #f9f9f9;
+            margin-bottom: 0;
+            margin-right: 58px;
+        }
+
+        .card-product__img {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .card-product__name {
+            @extend %rubik-400;
+            font-size: 40px;
+            line-height: 1.5;
+            text-align: left;
+            color: #333333;
+            margin-bottom: 12px;
+        }
+
+        .card-product__star {
+            display: block;
+            margin-bottom: 25px;
+        }
+
+        .card-product__price {
+            display: none;
+        }
+
+        .card-product__price-list {
+            display: block;
+            margin-bottom: 12px;
+            font-size: 30px;
+            color: #333333;
+        }
+
+        .card-product__desc {
+            display: block;
+            margin-bottom: 27px;
+        }
+
+        .card-product__btn {
+            @extend %button;
+            @extend %focus;
+            @extend %animation-button-grey;
+            cursor: pointer;
+            text-transform: uppercase;
+            border-radius: 5px;
+            padding: 10px 55px;
+
+        }
+
+        .card-product__links {
+            //right: 500px;
+            right: 58%;
+        }
+
+        .card-product__link {
+            border-radius: 0;
+        }
+
+        .card-product__link--search {
+            display: none;
+        }
+
+        .jq-ry-container {
+            padding: 0;
+        }
+    }
+
     &:hover .card-product__links {
         opacity: 1;
     }
@@ -26,6 +121,7 @@
     &__img {
         position: absolute;
         bottom: 0;
+        max-height: 100%;
 
         @media (max-width: 992px) {
             left: 20px;
@@ -48,6 +144,8 @@
         color: $light-grey;
         text-align: center;
         font-size: 16px;
+        text-align: center;
+        display: block;
     }
 
     &__links {
@@ -88,6 +186,8 @@
             fill: #fff;
         }
     }
+
+
 
     @media (max-width: 992px) {
         max-width: 342px;

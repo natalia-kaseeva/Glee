@@ -4,18 +4,18 @@
     &__inner {
         display: flex;
     }
+}
 
-    &__sidebar {
-        max-width: 270px;
-        width: 100%;
-        margin-right: 30px;
+.shop-sidebar {
+    max-width: 270px;
+    width: 100%;
+    margin-right: 30px;
+
+    &__item {
+        margin-bottom: 46px;
     }
 
-    &__sidebar-item {
-        margin-bottom: 50px;
-    }
-
-    &__sidebar-title {
+    &__title {
         @extend %dmsans-700;
         display: block;
         font-size: 18px;
@@ -24,7 +24,7 @@
         margin-bottom: 18px;
 
         &::after {
-            content:'';
+            content: '';
             position: absolute;
             width: 39px;
             height: 2px;
@@ -32,13 +32,44 @@
             left: 111px;
             top: 15px;
         }
+
+        &--price::after {
+            left: 64px;
+        }
+
+        &--brand::after {
+            left: 72px;
+        }
+
+        &--recent {
+            margin-bottom: 24px;
+            &::after {
+                left: 187px;
+            }
+        }
     }
 }
+
 
 .shop-content {
     width: 100%;
 
-    &__fitlers {
+    .products__cards {
+        grid-template-columns: repeat(3, 1fr);
+        margin-bottom: 100px;
+
+        &.products__cards--list {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 70px;
+
+            &.products__cards--list + .pagination {
+                justify-content: flex-start;
+            }
+        }
+    }
+
+    &__filters {
         margin-bottom: 40px;
         display: flex;
         justify-content: space-between;
@@ -51,17 +82,52 @@
     }
 
     &__btn {
-        padding: 0;
+        padding: 5px;
         background-color: transparent;
-        border: none;//focus add
-        margin-left: 15px;
+        border: 1px solid transparent;
+        @extend %focus;
+        margin-left: 10px;
         cursor: pointer;
         line-height: 0;
+        transition: border .5s;
 
-        &.shop-content__btn--active {
-            path {
-                fill: $accent-color;
-            }
+        &.shop-content__btn--active path {
+            fill: $accent-color;
         }
+    }
+
+    .jq-selectbox__select {
+        margin-right: 30px;
+        height: 32px;
+        padding: 0 30px 0 0px;
+        border: none;
+        background: transparent;
+        box-shadow: none;
+        @extend %rubik-400;
+        color: $dark-grey;
+        text-shadow: none;
+        font-size: 16px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &:hover {
+            background: transparent;
+        }
+    }
+
+    .jq-selectbox__trigger {
+        border: none;
+    }
+
+    .jq-selectbox__trigger-arrow {
+        border: none;
+        position: absolute;
+        top: 14px;
+        right: 12px;
+        width: 10px;
+        height: 5px;
+        background-image: url('../../images/shop/angle-down.svg');
     }
 }

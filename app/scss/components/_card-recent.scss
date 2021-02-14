@@ -1,9 +1,15 @@
 .card-recent {
-    display: flex;
+    @extend %focus;
     margin-bottom: 18px;
+    max-width: 220px;
+    transition: box-shadow .5s, background-color .5s, border .5s;
 
     &:last-child {
         margin-bottom: 0;
+    }
+
+    &__link {
+        display: flex;
     }
 
     &__img-wrapper {
@@ -31,6 +37,8 @@
     }
 
     &__title {
+        display: block;
+        max-width: 115px;
         font-size: 14px;
         margin-bottom: 5px;
     }
@@ -45,5 +53,13 @@
 
     .jq-ry-container {
         padding: 0;
+    }
+
+    &:hover {
+        box-shadow: 1px 1px 1px 1px #888181;
+    }
+
+    &:active {
+        background-color: $accent-color;
     }
 }

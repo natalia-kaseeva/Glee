@@ -66,7 +66,7 @@
             position: absolute;
             width: 79px;
             height: 64px;
-            background-image: url('../../images/results/icon-rate.svg');
+            background-image: url('../images/results/icon-rate.svg');
             background-repeat: no-repeat;
             top: 19px;
             left: 51px;
@@ -86,7 +86,7 @@
 
         &--van {
             &::before {
-                background-image: url('../../images/results/icon-van.svg');
+                background-image: url('../images/results/icon-van.svg');
 
                 @media (max-width: 992px) {
                     top: 29px;
@@ -100,13 +100,13 @@
 
         &--clock {
             &::before {
-                background-image: url('../../images/results/icon-clock.svg');
+                background-image: url('../images/results/icon-clock.svg');
             }
         }
 
         &--brand {
             &::before {
-                background-image: url('../../images/results/icon-brand.svg');
+                background-image: url('../images/results/icon-brand.svg');
             }
         }
     }

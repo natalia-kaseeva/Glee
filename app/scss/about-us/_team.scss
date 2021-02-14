@@ -184,26 +184,28 @@
         border-radius: 50%;
         position: relative;
         @extend %animation-icon-link;
+        background-repeat: no-repeat;
+        background-position: center center;
 
-        &::before {
-            content: '';
-            position: absolute;
-            width: 18px;
-            height: 18px;
-            top: 11px;
-            left: 12px;
-            background-image: url('../../images/instagram-icon.svg');
-            background-repeat: no-repeat;
-        }
+        // &::before {
+        //     content: '';
+        //     position: absolute;
+        //     width: 18px;
+        //     height: 18px;
+        //     top: 11px;
+        //     left: 12px;
+        //     //background-image: url('../../images/instagram-icon.svg');
+        //     background-repeat: no-repeat;
+        // }
 
-        &--google {
-            &::before {
-                width: 23px;
-                height: 15px;
-                background-image: url('../../images/google-icon.svg');
-                top: 13px;
-            }
-        }
+        // &--google {
+        //     &::before {
+        //         width: 23px;
+        //         height: 15px;
+        //         //background-image: url('../../images/google-icon.svg');
+        //         top: 13px;
+        //     }
+        // }
 
         &:hover {
             background-color: #c9c3c3;

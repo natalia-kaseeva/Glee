@@ -66,6 +66,31 @@ $(function () {
     readOnly: true
   });
 
+  $('.card-product__star').rateYo({
+    starWidth: "16px",
+    spacing: "15px",
+    normalFill: "#d6d6d6",
+    ratedFill: "#ffcc00",
+    readOnly: true
+  });
+
+  $('.select-style').styler();
+
+  $('.shop-content__btn').on('click', function() {
+    $('.shop-content__btn').removeClass('shop-content__btn--active');
+    $(this).addClass('shop-content__btn--active');
+  });
+
+  $('.button-list').on('click', function() {
+    $('.card-product').addClass('card-product--list');
+    $('.products__cards').addClass('products__cards--list');
+  });
+
+  $('.button-grid').on('click', function() {
+    $('.card-product').removeClass('card-product--list');
+    $('.products__cards').removeClass('products__cards--list');
+  });
+
   var containerEl1 = $('[data-ref="container-1"]');
   var containerEl2 = $('[data-ref="container-2"]');
 
