@@ -54,8 +54,13 @@ $(function () {
     $('body').toggleClass('lock');
   });
 
-  $('.filter__button, .filter__menu button').on('click', function () {
-    $('ul.filter__menu').toggleClass('filter__menu--active');
+  $('.shop-sidebar__btn-filter').on('click', function () {
+    $('.shop-sidebar').toggleClass('active');
+    $('body').toggleClass('lock');
+  });
+
+  $('.filter-product__button, .filter-product__menu button').on('click', function () {
+    $('ul.filter-product__menu').toggleClass('filter-product__menu--active');
   });
 
   $('.card-recent__star').rateYo({

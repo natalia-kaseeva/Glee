@@ -35,13 +35,22 @@
         align-items: center;
 
         @media (max-width: 576px) {
-            display: none;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            overflow: auto;
+            z-index: 5;
+            background-color: #fff;
+            left: -150%;
+            transform: translateX(-50%);
+            width: 100%;
+            border-bottom: 1px solid $light-grey;
+            transition: left .5s;
 
             &--active {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                text-align: center;
+                left: 50%;
             }
         }
     }
