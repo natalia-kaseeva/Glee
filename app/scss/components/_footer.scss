@@ -2,7 +2,7 @@
     &__top {
         padding: 80px 0 63px;
 
-        @media (max-width: 992px) {
+        @include _992 {
             padding: 60px 0 40px;
         }
     }
@@ -11,7 +11,7 @@
         display: inline-block;
         margin-bottom: 25px;
 
-        @media (max-width: 576px) {
+        @include _576 {
             margin: 0 auto 20px auto;
         }
     }
@@ -22,7 +22,7 @@
         line-height: 1.7;
         color: $grey;
 
-        @media (max-width: 992px) {
+        @include _992 {
             flex-wrap: wrap;
         }
     }
@@ -34,7 +34,7 @@
         max-width: 299px;
 
         &--contact {
-            @media (max-width: 1200px) {
+            @include _1200 {
                 max-width: 33%;
             }
         }
@@ -45,18 +45,18 @@
 
         &--services,
         &--account {
-            @media (max-width: 1200px) {
+            @include _1200 {
                 max-width: 21%;
             }
         }
 
-        @media (max-width: 992px) {
+        @include _992 {
             max-width: 33.33%;
             margin: 0 auto;
             align-items: center;
         }
 
-        @media (max-width: 576px) {
+        @include _576 {
             max-width: 100%;
             text-align: center;
         }
@@ -65,7 +65,7 @@
         &--form {
             max-width: 270px;
 
-            @media (max-width: 992px) {
+            @include _992 {
                 max-width: 800px;
                 order: -1;
                 margin: 0 auto 40px auto;
@@ -75,15 +75,17 @@
     }
 
     &__item-list {
-        &:not(:last-child) {
-            margin-bottom: 10px;
+        margin-bottom: 10px;
+
+        &:last-child {
+            margin-bottom: 0;
         }
     }
 
     &__connection {
         max-width: 200px;
 
-        @media (max-width: 576px) {
+        @include _576 {
             margin: 0 auto;
         }
     }
@@ -96,7 +98,7 @@
         @extend %dmsans-700;
         text-transform: uppercase;
 
-        @media (max-width: 576px) {
+        @include _576 {
             margin-bottom: 10px;
         }
     }
@@ -104,7 +106,7 @@
     &__text {
         margin-bottom: 34px;
 
-        @media (max-width: 992px) {
+        @include _992 {
             margin-bottom: 15px;
         }
     }
@@ -118,21 +120,21 @@
         font-size: 14px;
         color: $grey;
 
-        @media (max-width: 992px) {
+        @include _992 {
             padding: 30px 0 30px;
         }
 
-        @media (max-width: 768px) {
+        @include _768 {
             padding: 15px 0 15px;
         }
     }
 
     &__copy {
-        @media (max-width: 768px) {
+        @include _768 {
             margin: 0 auto;
         }
 
-        @media (max-width: 576px) {
+        @include _576 {
             text-align: center;
         }
     }
@@ -140,7 +142,7 @@
     &__bottom-list {
         display: flex;
 
-        @media (max-width: 768px) {
+        @include _768 {
             display: none;
         }
     }
@@ -181,13 +183,13 @@
 
 .subscribe-form {
 
-    @media (max-width: 992px) {
+    @include _992 {
         max-width: 392px;
         width: 100%;
         margin: 0 auto
     }
 
-    @media (max-width: 576px) {
+    @include _576 {
         max-width: 250px;
         width: 100%;
         margin: 0 auto;
@@ -205,11 +207,11 @@
         @extend %focus;
         transition: background-color .5s, border .5s;
 
-        @media (max-width: 992px) {
+        @include _992 {
             max-width: 265px;
         }
 
-        @media (max-width: 992px) {
+        @include _992 {
             margin-bottom: 10px;
         }
 
@@ -218,7 +220,7 @@
             @extend %dmsans-400;
             color: #234969;
 
-            @media (max-width: 576px) {
+            @include _576 {
                 text-align: center;
             }
         }
@@ -240,11 +242,11 @@
         @extend %focus;
         @extend %animation-button-grey;
 
-        @media (max-width: 992px) {
+        @include _992 {
             padding: 0 30px 0 30px;
         }
 
-        @media (max-width: 576px) {
+        @include _576 {
             width: 100%;
             margin-left: 0;
         }

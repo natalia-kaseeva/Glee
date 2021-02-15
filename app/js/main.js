@@ -50,7 +50,7 @@ $(function () {
   });
 
   $('.menu__burger, .menu a').on('click', function () {
-    $('.menu__burger, .menu').toggleClass('active');
+    $('.menu__burger, .menu__inner').toggleClass('active');
     $('body').toggleClass('lock');
   });
 

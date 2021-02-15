@@ -1,8 +1,0 @@
-.logo {
-    @extend %focus;
-    transition: border .5s;
-    
-    & img {
-        max-width: 100%;
-    }
-}

@@ -13,11 +13,11 @@
         height: 250px;
     }
 
-    @media (max-width: 1200px) {
-        max-width: 30%;
+    @include _1200 {
+        max-width: 32%;
     }
 
-    @media (max-width: 768px) {
+    @include _768 {
         max-width: 400px;
         margin: 0 auto 30px auto;
 
@@ -58,15 +58,15 @@
         box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
         border-radius: 5px;
 
-        @media (max-width: 992px) {
+        @include _992 {
             padding: 20px 10px 20px 10px;
         }
 
-        @media (max-width: 768px) {
+        @include _768 {
             padding: 40px 20px 40px 20px;
         }
 
-        @media (max-width: 576px) {
+        @include _576 {
             padding: 40px 20px 20px 20px;
         }
     }
@@ -108,15 +108,15 @@
             left: 5px;
         }
 
-        @media (max-width: 992px) {
+        @include _992 {
             display: block;
         }
 
-        @media (max-width: 768px) {
+        @include _768 {
             display: inline;
         }
 
-        @media (max-width: 576px) {
+        @include _576 {
             display: block;
             margin-bottom: 10px;
 

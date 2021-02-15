@@ -1,14 +1,14 @@
 @import 'vars';
+@import 'media-mixin';
 @import 'fonts';
 @import 'reset';
 @import 'libs';
 @import 'global';
 
 @import 'components/header';
-@import 'components/logo';
 @import 'components/footer';
 @import 'components/card-product';
-@import 'components/card-small';
+@import 'components/card-design';
 @import 'components/card-news';
 @import 'components/filter-product';
 @import 'components/video';
@@ -30,4 +30,6 @@
 @import 'about-us/result';
 @import 'about-us/team';
 
-@import 'shop/_shop';
+@import 'shop/shop';
+@import 'shop/shop-sidebar';
+@import 'shop/shop-content';

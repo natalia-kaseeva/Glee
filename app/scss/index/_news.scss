@@ -7,7 +7,7 @@
         align-items: center;
         margin-bottom: 33px;
 
-        @media (max-width: 576px) {
+        @include _576 {
             display: block;
             text-align: center;
         }
@@ -22,7 +22,7 @@
             margin-right: 0;
         }
 
-        @media (max-width: 768px) {
+        @include _768 {
             display: block;
         }
 
@@ -45,18 +45,18 @@
             top: 9px;
             right: 0;
 
-            @media (max-width: 576px) {
+            @include _576 {
                 top: 5px;
                 right: 7px;
             }
         }
     }
 
-    @media (max-width: 992px) {
+    @include _992 {
         padding-top: 80px;
     }
 
-    @media (max-width: 992px) {
+    @include _992 {
         padding-top: 50px;
     }
 }

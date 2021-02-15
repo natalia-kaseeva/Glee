@@ -1,11 +1,11 @@
 .experience {
     padding: 120px 0 120px;
 
-    @media (max-width: 992px) {
+    @include _992 {
         padding: 80px 0 80px;
     }
 
-    @media (max-width: 768px) {
+    @include _768 {
         padding: 50px 0 50px;
     }
 
@@ -15,11 +15,11 @@
         max-height: 676px;
         object-fit: cover;
 
-        @media (max-width: 1200px) {
+        @include _1200 {
             max-width: 372px;
         }
 
-        @media (max-width: 992px) {
+        @include _992 {
             display: none;
         }
     }
@@ -64,7 +64,7 @@
         color: $dark-grey;
         margin-bottom: 38px;
 
-        @media (max-width: 576px) {
+        @include _576 {
             font-size: 26px;
             margin-bottom: 20px;
         }
@@ -85,12 +85,12 @@
             bottom: -60px;
             left: 0;
 
-            @media (max-width: 576px) {
+            @include _576 {
                 display: none;
             }
         }
 
-        @media (max-width: 576px) {
+        @include _576 {
             margin-bottom: 40px;
         }
     }
@@ -99,11 +99,11 @@
         display: flex;
         justify-content: space-between;
 
-        @media (max-width: 768px) {
+        @include _768 {
             margin-left: 20px;
         }
 
-        @media (max-width: 576px) {
+        @include _576 {
             display: block;
         }
     }
@@ -130,7 +130,7 @@
             top: 18px;
             left: -4px;
 
-            @media (max-width: 768px) {
+            @include _768 {
                 top: 0px;
                 left: 22px;
             }
@@ -152,18 +152,18 @@
             }
         }
 
-        @media (max-width: 1800px) {
+        @include _1800 {
             max-width: 33%;
             margin: 0 auto;
             border: none;
         }
 
-        @media (max-width: 768px) {
+        @include _768 {
             padding-left: 0;
             padding-top: 52px;
         }
 
-        @media (max-width: 576px) {
+        @include _576 {
             padding-left: 88px;
             padding-top: 0px;
             margin: 0;
@@ -177,7 +177,7 @@
         font-size: 36px;
         line-height: 1;
 
-        @media (max-width: 768px) {
+        @include _768 {
             font-size: 28px;
         }
     }

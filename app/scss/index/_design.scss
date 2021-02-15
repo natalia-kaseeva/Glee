@@ -1,7 +1,7 @@
 .design {
     padding: 85px 0 123px;
 
-    @media (max-width: 768px) {
+    @include _768 {
         padding: 50px 0 70px;
     }
 
@@ -11,16 +11,16 @@
         grid-template-rows: repeat(2, 1fr);
         grid-gap: 30px;
 
-        @media (max-width: 992px) {
+        @include _992 {
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(3, 1fr);
         }
 
-        @media (max-width: 768px) {
+        @include _768 {
             grid-gap: 10px;
         }
 
-        @media (max-width: 576px) {
+        @include _576 {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -30,11 +30,11 @@
     &__filter {
         margin-bottom: 74px;
 
-        @media (max-width: 992px) {
+        @include _992 {
             margin-bottom: 50px;
         }
 
-        @media (max-width: 768px) {
+        @include _768 {
             margin-bottom: 20px;
         }
     }

@@ -11,7 +11,7 @@
         justify-content: space-between;
         align-items: center;
 
-        @media (max-width: 1200px) {
+        @include _1200 {
             max-width: 900px;
         }
 
@@ -29,16 +29,16 @@
         max-height: 100px;
     }
 
-    @media (max-width: 1200px) {
+    @include _1200 {
         margin-top: -178px;
     }
 
-    @media (max-width: 768px) {
+    @include _768 {
         padding: 240px 0 40px;
         margin-top: -175px;
     }
 
-    @media (max-width: 576px) {
+    @include _576 {
         display: none;
     }
 }

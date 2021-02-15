@@ -3,11 +3,11 @@
         padding: 50px 0 0;
         margin-bottom: 180px;
 
-        @media (max-width: 992px) {
+        @include _992 {
             margin-bottom: 60px;
         }
 
-        @media (max-width: 768px) {
+        @include _768 {
             margin-bottom: 90px;
         }
     }
@@ -24,7 +24,7 @@
         row-gap: 35px;
         height: auto;
 
-        @media (max-width: 992px) {
+        @include _992 {
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(4, 1fr);
         }
@@ -37,11 +37,11 @@
     &__filter {
         margin-bottom: 70px;
 
-        @media (max-width: 992px) {
+        @include _992 {
             margin-bottom: 50px;
         }
 
-        @media (max-width: 768px) {
+        @include _768 {
             margin-bottom: 20px;
         }
     }
@@ -51,11 +51,11 @@
     &__items {
         display: flex;
 
-        @media (max-width: 768px) {
+        @include _768 {
             display: block;
         }
 
-        @media (max-width: 576px) {
+        @include _576 {
             display: none;
         }
     }
@@ -72,15 +72,15 @@
             margin-right: 0;
         }
 
-        @media (max-width: 1200px) {
+        @include _1200 {
             margin-right: 10px;
         }
 
-        @media (max-width: 992px) {
+        @include _992 {
             display: block;
         }
 
-        @media (max-width: 768px) {
+        @include _768 {
             width: 100%;
             display: flex;
             margin-bottom: 30px;
@@ -100,12 +100,12 @@
             margin-left: 30px;
         }
 
-        @media (max-width: 1200px) {
+        @include _1200 {
             max-width: 150px;
             margin-left: 15px;
         }
 
-        @media (max-width: 992px) {
+        @include _992 {
             max-width: 120px;
             margin: -30px auto 20px auto;
         }
@@ -120,7 +120,7 @@
             margin-right: 10px;
         }
 
-        @media (max-width: 992px) {
+        @include _992 {
             margin: 20px auto 20px auto;
             text-align: center;
         }
@@ -132,11 +132,11 @@
         line-height: 1.2;
         margin-bottom: 18px;
 
-        @media (max-width: 1200px) {
+        @include _1200 {
             font-size: 24px;
         }
 
-        @media (max-width: 992px) {
+        @include _992 {
             font-size: 22px;
         }
     }
@@ -144,7 +144,7 @@
     &__text {
         margin-bottom: 27px;
 
-        @media (max-width: 768px) {
+        @include _768 {
             margin-bottom: 10px;
         }
     }
@@ -164,12 +164,12 @@
             fill: #436372;
             transition: fill .5s;
         }
-    
+
         &:hover path {
             fill: #fff;
         }
 
-        @media (max-width: 768px) {
+        @include _768 {
             padding: 10px 20px 10px 20px;
         }
     }

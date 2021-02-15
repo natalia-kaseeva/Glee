@@ -23,7 +23,7 @@
         padding: 0;
         margin-bottom: 9px;
 
-        @media (max-width: 768px) {
+        @include _768 {
             margin-bottom: 15px;
         }
 
@@ -41,7 +41,7 @@
             margin-bottom: 0;
             margin-right: 58px;
 
-            @media (max-width: 768px) {
+            @include _768 {
                 min-height: 350px;
             }
         }
@@ -60,7 +60,7 @@
             color: #333333;
             margin-bottom: 12px;
 
-            @media (max-width: 768px) {
+            @include _768 {
                 font-size: 32px;
             }
         }
@@ -69,7 +69,7 @@
             display: block;
             margin-bottom: 25px;
 
-            @media (max-width: 768px) {
+            @include _768 {
                 margin-bottom: 15px;
             }
         }
@@ -127,7 +127,7 @@
         position: relative;
         margin-bottom: 60px;
 
-        @media (max-width: 768px) {
+        @include _768 {
             margin-bottom: 30px;
         }
     }
@@ -137,16 +137,15 @@
         bottom: 0;
         max-height: 100%;
 
-        @media (max-width: 992px) {
+        @include _992 {
             left: 20px;
         }
 
-        @media (max-width: 576px) {
+        @include _576 {
             height: 150px;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-
         }
     }
 
@@ -156,7 +155,7 @@
         font-size: 16px;
         flex: 1 1 auto;
 
-        @media (max-width: 576px) {
+        @include _576 {
             font-size: 20px;
             margin-bottom: 10px;
         }
@@ -170,7 +169,7 @@
         text-align: center;
         display: block;
 
-        @media (max-width: 576px) {
+        @include _576 {
             margin-bottom: 10px;
         }
     }
@@ -214,8 +213,9 @@
         }
     }
 
-    @media (max-width: 992px) {
+    @include _992 {
         max-width: 342px;
+        margin: 0 auto;
     }
 
     @media (max-width: 798px) {
@@ -223,5 +223,4 @@
         margin-left: auto;
         margin-right: auto;
     }
-
 }

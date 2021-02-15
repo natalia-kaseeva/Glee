@@ -1,0 +1,140 @@
+.shop-content {
+    width: 100%;
+
+    .products__cards {
+        grid-template-columns: repeat(3, 1fr);
+        margin-bottom: 100px;
+
+        .card-product {
+            @include _576 {
+                margin-bottom: 10px;
+
+                .card-product__star,
+                .card-product__desc {
+                    display: block;
+                }
+            }
+        }
+
+        .card-product__img {
+            @include _576 {
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        .card-product__star {
+            @include _576 {
+                margin: 0 auto 10px auto;
+            }
+        }
+
+        .card-product__desc {
+            @include _576 {
+                margin-bottom: 10px;
+            }
+        }
+
+        .card-product__btn {
+            display: none;
+            @extend %button;
+            @extend %focus;
+            @extend %animation-button-grey;
+            cursor: pointer;
+            text-transform: uppercase;
+            border-radius: 5px;
+            padding: 10px 55px;
+            margin: 0 auto;
+
+            @include _576 {
+                display: block;
+            }
+        }
+
+        &.products__cards--list {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 70px;
+
+            &.products__cards--list+.pagination {
+                justify-content: flex-start;
+            }
+        }
+
+        @include _768 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include _576 {
+            display: block;
+        }
+    }
+
+    &__filters {
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__buttons {
+        display: flex;
+        align-items: center;
+
+        @include _576 {
+            display: none;
+        }
+    }
+
+    &__btn {
+        padding: 5px;
+        background-color: transparent;
+        border: 1px solid transparent;
+        @extend %focus;
+        margin-left: 10px;
+        cursor: pointer;
+        line-height: 0;
+        transition: border .5s;
+
+        &.shop-content__btn--active path {
+            fill: $accent-color;
+        }
+    }
+
+    .jq-selectbox__select {
+        margin-right: 30px;
+        height: 32px;
+        padding: 0 30px 0 0px;
+        border: none;
+        background: transparent;
+        box-shadow: none;
+        @extend %rubik-400;
+        color: $dark-grey;
+        text-shadow: none;
+        font-size: 16px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &:hover {
+            background: transparent;
+        }
+    }
+
+    .jq-selectbox__trigger {
+        border: none;
+    }
+
+    .jq-selectbox__trigger-arrow {
+        border: none;
+        position: absolute;
+        top: 14px;
+        right: 12px;
+        width: 10px;
+        height: 5px;
+        background-image: url('../../images/shop/angle-down.svg');
+    }
+}

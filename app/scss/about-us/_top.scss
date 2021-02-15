@@ -10,11 +10,11 @@
         color: #222933;
     }
 
-    @media (max-width: 1800px) {
+    @include _1800 {
         margin-top: 110px;
     }
 
-    @media (max-width: 1200px) {
+    @include _1200 {
         margin-top: 80px;
     }
 }

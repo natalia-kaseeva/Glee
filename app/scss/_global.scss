@@ -12,7 +12,7 @@ body {
     flex-direction: column;
     background-color: #fff;
 
-    @media (max-width: 1200px) {
+    @include _1200 {
         &.lock {
             overflow: hidden;
         }
@@ -24,20 +24,12 @@ body {
 }
 
 .container {
-    max-width: 1800px;
+    max-width: 1770px;
     margin: 0 auto;
-    padding: 0 15px;
-
-    @media (max-width: 1800px) {
-        padding: 0;
-    }
 
     &--small {
         max-width: 1200px;
-
-        @media (max-width: 1800px) {
-            padding: 0 15px;
-        }
+        padding: 0 15px;
     }
 }
 
@@ -53,6 +45,11 @@ body {
     border: 0;
 }
 
+.logo {
+    @extend %focus;
+    transition: border .5s;
+}
+
 .title {
     @extend %dmsans-700;
     font-size: 36px;
@@ -60,23 +57,15 @@ body {
     text-align: center;
     padding: 0;
 
-    @media (max-width: 992px) {
+    @include _992 {
         font-size: 34px;
     }
 
-    @media (max-width: 768px) {
+    @include _768 {
         font-size: 28px;
     }
 
-    @media (max-width: 576px) {
+    @include _576 {
         font-size: 24px;
     }
-}
-
-.button {
-    display: inline-block;
-    font-size: 15px;
-    color: #ffffff;
-    padding: 15px 21px 16px 28px;
-    background-color: $light-grey;
 }

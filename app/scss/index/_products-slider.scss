@@ -10,7 +10,7 @@
         background-color: $accent-color;
         display: flex;
 
-        @media (max-width: 1800px) {
+        @include _1800 {
             min-height: 100vh;
         }
     }
@@ -18,7 +18,7 @@
     &__item-inner {
         display: flex;
 
-        @media (max-width: 768px) {
+        @include _768 {
             display: block;
         }
     }
@@ -26,9 +26,9 @@
     &__desc {
         max-width: 418px;
         margin-top: 218px;
-        margin-left: 281px;
+        margin-left: 300px;
 
-        @media (max-width: 1800px) {
+        @include _1800 {
             position: absolute;
             top: 25%;
             left: 0;
@@ -39,11 +39,11 @@
             left: -224px;
         }
 
-        @media (max-width: 1200px) {
+        @include _1200 {
             left: -255px;
         }
 
-        @media (max-width: 992px) {
+        @include _992 {
             left: -253px;
         }
     }
@@ -56,15 +56,15 @@
         text-transform: uppercase;
         margin-bottom: 20px;
 
-        @media (max-width: 992px) {
+        @include _992 {
             font-size: 68px;
         }
 
-        @media (max-width: 768px) {
+        @include _768 {
             font-size: 58px;
         }
 
-        @media (max-width: 576px) {
+        @include _576 {
             font-size: 46px;
         }
     }
@@ -76,12 +76,12 @@
         color: #436372;
         margin-bottom: 38px;
 
-        @media (max-width: 992px) {
+        @include _992 {
             font-size: 16px;
             max-width: 300px;
         }
 
-        @media (max-width: 768px) {
+        @include _768 {
             max-width: 250px;
         }
     }
@@ -92,7 +92,7 @@
         margin-top: 96px;
         margin-left: 114px;
 
-        @media (max-width: 1800px) {
+        @include _1800 {
             position: absolute;
             top: 45%;
             left: 43%;
@@ -103,17 +103,17 @@
             left: 27%;
         }
 
-        @media (max-width: 1200px) {
+        @include _1200 {
             max-width: 580px;
             left: 29%;
         }
 
-        @media (max-width: 992px) {
+        @include _992 {
             left: 30%;
             max-width: 420px;
         }
 
-        @media (max-width: 768px) {
+        @include _768 {
             left: 27%;
             max-width: 300px
         }
@@ -128,7 +128,7 @@
         @extend %focus;
         @extend %animation-button-grey;
 
-        @media (max-width: 576px) {
+        @include _576 {
             padding: 15px 20px 16px 20px;
         }
     }
@@ -184,7 +184,7 @@
     }
 
     .slick-slide img {
-        @media (max-width: 576px) {
+        @include _576 {
             display: none;
         }
     }
