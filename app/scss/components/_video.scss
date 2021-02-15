@@ -29,17 +29,42 @@
         left: 0;
         bottom: 0;
         transition: border .5s;
+        z-index: 5;
 
         & path {
             transition: fill 0.5s;
         }
-        
-        &:hover path:nth-child(2) {
+
+        &:hover  path {
             fill: $dark-grey;
         }
 
-        &:active path:nth-child(2) {
+        &:active path {
             fill: $accent-color;
         }
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 98px;
+            height: 98px;
+            background-color: rgb(163, 187, 200);
+            border-radius: 50%;
+            z-index: 2;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 127px;
+            height: 127px;
+            background-color: rgba(163, 187, 200, .4);
+            border-radius: 50%;
+            z-index: 1;
+        }
+    }
+
+    &__img {
+        z-index: 5;
     }
 }
