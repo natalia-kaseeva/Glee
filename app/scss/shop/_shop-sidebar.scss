@@ -7,8 +7,8 @@
         display: none;
         @extend %focus;
         position: fixed;
-        width: 40px;
-        height: 40px;
+        width: 41px;
+        height: 41px;
         background-color: $accent-color;
         right: 0;
         bottom: 50px;
@@ -16,12 +16,12 @@
 
         &::before {
             content: '';
-            width: 15px;
-            height: 15px;
-            background-image: url('../../images/icon-arrow.svg');
-            top: 0;
-            left: 0;
-
+            position: absolute;
+            width: 27px;
+            height: 27px;
+            background-image: url('../images/filter-icon-small.svg');
+            top: 7px;
+            left: 7px;
         }
 
         @include _1200 {
